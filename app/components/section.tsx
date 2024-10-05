@@ -138,8 +138,7 @@ const Section = () => {
                                 alt="Legal scales"
                                 width={500}
                                 height={500}
-                                objectFit="contain"
-                                className="rounded-full mx-auto"
+                                className="rounded-full mx-auto object-cover"
                             />
                         </div>
                     </div>
@@ -157,7 +156,6 @@ const Section = () => {
                             <Link href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
                                 <div className="bg-white p-6 rounded-lg shadow-md relative group hover:shadow-lg transition-shadow duration-300">
                                     <div className="flex items-center mb-4">
-                                        {/* <Image src={service.icon} alt={service.title} width={40} height={40} className="mr-4" /> */}
                                         <h3 className="text-lg font-semibold">{service.title}</h3>
                                     </div>
                                     <div className="absolute top-0 right-0 w-0 h-0 border-t-[50px] border-t-red-600 border-l-[50px] border-l-transparent group-hover:border-t-red-700 transition-colors duration-300">
@@ -170,8 +168,9 @@ const Section = () => {
                 </div>
             </section>
             {/* .................. */}
+            <h2 className="text-center text-4xl font-bold mt-10 mb-6">Các gói dịch vụ mà chúng tôi đang cung cấp</h2>
             <div className="overflow-x-auto">
-                <table className="max-w-7xl mx-auto bg-white">
+                <table className="max-w-7xl mx-auto bg-white mb-10">
                     <thead>
                         <tr className="bg-blue-800 text-white">
                             <th className="py-3 px-4 text-left">DỊCH VỤ CUNG CẤP</th>
@@ -180,8 +179,8 @@ const Section = () => {
                             ))}
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr className="bg-blue-800 text-white">
+                    <tbody className="mb-10">
+                        <tr className="bg-red-500 text-white">
                             <td className="py-3 px-4">Giá dịch vụ trọn gói</td>
                             {pricingData.map((plan, index) => (
                                 <td key={index} className="py-3 px-4 text-center font-bold">{plan.price}</td>
@@ -204,10 +203,85 @@ const Section = () => {
                                 ))}
                             </tr>
                         ))}
-                        {/* Thêm các hàng khác cho thanh toán, dịch vụ bổ sung, v.v. */}
                     </tbody>
                 </table>
             </div>
+
+            {/* ........ */}
+            <section className="py-16 bg-gray-100">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h2 className="text-3xl font-bold text-red-600 mb-6">Thông tin liên hệ</h2>
+                            <div className="space-y-4">
+                                <div className="flex items-center">
+                                    {/* <PhoneIcon className="h-6 w-6 text-red-600 mr-2" /> */}
+                                    <p>Hotline: (+84) 911 357 447</p>
+                                </div>
+                                <div className="flex items-center">
+                                    {/* <EnvelopeIcon className="h-6 w-6 text-red-600 mr-2" /> */}
+                                    <p>Email: info@apolatlegal.com</p>
+                                </div>
+                                <div className="flex items-start">
+                                    {/* <MapPinIcon className="h-6 w-6 text-red-600 mr-2 mt-1" /> */}
+                                    <div>
+                                        <p className="font-semibold">Văn phòng tại Đà Nẵng:</p>
+                                        <p>64 Lê Đại Hành, Khuê Trung, Cẩm lệ, Thành phố Đà Nẵng, Việt Nam</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <h2 className="text-3xl font-bold text-red-600 mb-6">Gửi yêu cầu tư vấn</h2>
+                            <form className="space-y-4">
+                                <div>
+                                    <label htmlFor="name" className="block mb-1">Họ tên *</label>
+                                    <input type="text" id="name" name="name" className="w-full p-2 border rounded" placeholder="Nhập họ tên..." required />
+                                </div>
+                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                                    <div>
+                                        <label htmlFor="phone" className="block mb-1">Số điện thoại *</label>
+                                        <input type="tel" id="phone" name="phone" className="w-full p-2 border rounded" placeholder="Nhập số điện thoại..." required />
+                                    </div>
+                                    <div>
+                                        <label htmlFor="email" className="block mb-1">Email</label>
+                                        <input type="email" id="email" name="email" className="w-full p-2 border rounded" placeholder="Nhập email..." />
+                                    </div>
+                                </div>
+                                <div>
+                                    <label htmlFor="area" className="block mb-1">Lĩnh vực *</label>
+                                    <select id="area" name="area" className="w-full p-2 border rounded" required>
+                                        <option value="">Tư vấn doanh nghiệp</option>
+                                        {/* Thêm các option khác */}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label htmlFor="service" className="block mb-1">Dịch vụ cần tư vấn *</label>
+                                    <select id="service" name="service" className="w-full p-2 border rounded" required>
+                                        <option value="">Doanh nghiệp</option>
+                                        {/* Thêm các option khác */}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label htmlFor="city" className="block mb-1">Tỉnh thành *</label>
+                                    <select id="city" name="city" className="w-full p-2 border rounded" required>
+                                        <option value="">--Please choose an option--</option>
+                                        {/* Thêm các option khác */}
+                                    </select>
+                                </div>
+                                <div>
+                                    <label htmlFor="message" className="block mb-1">Nội dung *</label>
+                                    <textarea id="message" name="message" rows={4} className="w-full p-2 border rounded" placeholder="Nhập nội dung..." required></textarea>
+                                </div>
+                                <button type="submit" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition-colors duration-300">
+                                    Gửi đi
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
         </section>
     );
 };

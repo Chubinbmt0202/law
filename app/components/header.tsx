@@ -10,29 +10,29 @@ const Header = () => {
 
     const menuItems = {
         'Về Apolat Legal': [
-            'Câu chuyện của chúng tôi',
-            'Giao dịch nổi bật',
-            'Giải thưởng và công nhận',
-            'Sự kiện diễn ra',
-            'Hợp tác quốc tế'
+            { name: 'Câu chuyện của chúng tôi', path: '/about' },
+            { name: 'Giao dịch nổi bật', path: '/ve-apolat-legal/giao-dich-noi-bat' },
+            { name: 'Giải thưởng và công nhận', path: '/ve-apolat-legal/giai-thuong-va-cong-nhan' },
+            { name: 'Sự kiện diễn ra', path: '/ve-apolat-legal/su-kien-dien-ra' },
+            { name: 'Hợp tác quốc tế', path: '/ve-apolat-legal/hop-tac-quoc-te' }
         ],
         'Đội Ngũ Luật Sư': [
-            'Nhân sự pháp lý',
-            'Nhân sự vận hành'
+            { name: 'Nhân sự pháp lý', path: '/employee' },
+            { name: 'Nhân sự vận hành', path: '/doi-ngu-luat-su/nhan-su-van-hanh' }
         ],
         'Dịch Vụ': [
-            'Giải quyết tranh chấp',
-            'Hợp tác doanh nghiệp',
-            'Tư vấn thành lập doanh nghiệp',
-            'Tài chính',
-            'Đầu tư'
+            { name: 'Giải quyết tranh chấp', path: '/dich-vu/giai-quyet-tranh-chap' },
+            { name: 'Hợp tác doanh nghiệp', path: '/dich-vu/hop-tac-doanh-nghiep' },
+            { name: 'Tư vấn thành lập doanh nghiệp', path: '/dich-vu/tu-van-thanh-lap-doanh-nghiep' },
+            { name: 'Tài chính', path: '/dich-vu/tai-chinh' },
+            { name: 'Đầu tư', path: '/dich-vu/dau-tu' }
         ],
         'Kiến Thức': [
-            'Bài viết chuyên môn',
-            'Kiến thức pháp luật',
-            'Cập nhật pháp lý',
-            'Biểu mẫu',
-            'Văn bản pháp luật'
+            { name: 'Bài viết chuyên môn', path: '/kien-thuc/bai-viet-chuyen-mon' },
+            { name: 'Kiến thức pháp luật', path: '/kien-thuc/kien-thuc-phap-luat' },
+            { name: 'Cập nhật pháp lý', path: '/kien-thuc/cap-nhat-phap-ly' },
+            { name: 'Biểu mẫu', path: '/kien-thuc/bieu-mau' },
+            { name: 'Văn bản pháp luật', path: '/kien-thuc/van-ban-phap-luat' }
         ]
     };
     return (
@@ -76,10 +76,10 @@ const Header = () => {
                                         <div className="absolute left-0 w-52 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
                                             <div className="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                                                 {items.map((item) => (
-                                                    <Link key={item} href={`/${key.toLowerCase().replace(/\s+/g, '-')}/${item.toLowerCase().replace(/\s+/g, '-')}`}
+                                                    <Link key={item.name} href={item.path}
                                                         className="block px-4 py-3 text-sm text-gray-700 hover:bg-gray-100 hover:text-gray-900"
                                                         role="menuitem">
-                                                        {item}
+                                                        {item.name}
                                                     </Link>
                                                 ))}
                                             </div>
