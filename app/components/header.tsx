@@ -20,13 +20,6 @@ const Header = () => {
             { name: 'Nhân sự pháp lý', path: '/employee' },
             { name: 'Nhân sự vận hành', path: '/doi-ngu-luat-su/nhan-su-van-hanh' }
         ],
-        'Dịch Vụ': [
-            { name: 'Giải quyết tranh chấp', path: '/dich-vu/giai-quyet-tranh-chap' },
-            { name: 'Hợp tác doanh nghiệp', path: '/dich-vu/hop-tac-doanh-nghiep' },
-            { name: 'Tư vấn thành lập doanh nghiệp', path: '/dich-vu/tu-van-thanh-lap-doanh-nghiep' },
-            { name: 'Tài chính', path: '/dich-vu/tai-chinh' },
-            { name: 'Đầu tư', path: '/dich-vu/dau-tu' }
-        ],
         'Kiến Thức': [
             { name: 'Bài viết chuyên môn', path: '/kien-thuc/bai-viet-chuyen-mon' },
             { name: 'Kiến thức pháp luật', path: '/kien-thuc/kien-thuc-phap-luat' },
@@ -87,6 +80,7 @@ const Header = () => {
                                     )}
                                 </div>
                             ))}
+                            <Link href="/service" className="text-black hover:text-[#c41230]">Dịch vụ</Link>
                             <Link href="/linh-vuc" className="text-black hover:text-[#c41230]">Lĩnh Vực</Link>
                             <Link href="/tuyen-dung" className="text-black hover:text-[#c41230]">Tuyển Dụng</Link>
                             <Link href="/lien-he" className="text-black hover:text-[#c41230]">Liên Hệ</Link>

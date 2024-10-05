@@ -4,19 +4,68 @@ import Link from 'next/link';
 
 const Section = () => {
     const services = [
-        { icon: '/icons/giai-quyet-tranh-chap.svg', title: 'Giải Quyết Tranh Chấp' },
-        { icon: '/icons/bat-dong-san.svg', title: 'Bất Động Sản' },
-        { icon: '/icons/doanh-nghiep-va-dau-tu.svg', title: 'Doanh Nghiệp Và Đầu Tư' },
-        { icon: '/icons/lao-dong.svg', title: 'Lao Động' },
-        { icon: '/icons/so-huu-tri-tue.svg', title: 'Sở Hữu Trí Tuệ' },
-        { icon: '/icons/thuong-mai-trong-va-ngoai-nuoc.svg', title: 'Thương Mại Trong Và Ngoài Nước' },
-        { icon: '/icons/ipo-huy-dong-von.svg', title: 'IPO & Huy Động Vốn' },
-        { icon: '/icons/thu-hoi-no.svg', title: 'Thu Hồi Nợ' },
-        { icon: '/icons/xay-dung-va-co-so-ha-tang.svg', title: 'Xây Dựng Và Cơ Sở Hạ Tầng' },
-        { icon: '/icons/tu-van-ma.svg', title: 'Tư Vấn M&A' },
-        { icon: '/icons/tai-chinh.svg', title: 'Tài Chính' },
-        { icon: '/icons/tu-van-nhuong-quyen-thuong-mai.svg', title: 'Tư Vấn Nhượng Quyền Thương Mại' },
+        {
+            icon: '/icons/giai-quyet-tranh-chap.svg',
+            title: 'Giải Quyết Tranh Chấp',
+            description: 'Cung cấp dịch vụ tư vấn và hỗ trợ giải quyết tranh chấp thương mại, dân sự, và hợp đồng một cách hiệu quả.'
+        },
+        {
+            icon: '/icons/bat-dong-san.svg',
+            title: 'Bất Động Sản',
+            description: 'Hỗ trợ pháp lý và tư vấn về giao dịch, hợp đồng, và tranh chấp liên quan đến bất động sản.'
+        },
+        {
+            icon: '/icons/doanh-nghiep-va-dau-tu.svg',
+            title: 'Doanh Nghiệp Và Đầu Tư',
+            description: 'Tư vấn pháp lý toàn diện cho các doanh nghiệp và nhà đầu tư trong các hoạt động kinh doanh và đầu tư.'
+        },
+        {
+            icon: '/icons/lao-dong.svg',
+            title: 'Lao Động',
+            description: 'Cung cấp giải pháp pháp lý liên quan đến lao động, hợp đồng lao động, và tranh chấp lao động.'
+        },
+        {
+            icon: '/icons/so-huu-tri-tue.svg',
+            title: 'Sở Hữu Trí Tuệ',
+            description: 'Dịch vụ bảo vệ quyền sở hữu trí tuệ, bao gồm bản quyền, thương hiệu, và sáng chế.'
+        },
+        {
+            icon: '/icons/thuong-mai-trong-va-ngoai-nuoc.svg',
+            title: 'Thương Mại Trong Và Ngoài Nước',
+            description: 'Tư vấn và hỗ trợ các vấn đề pháp lý trong thương mại nội địa và quốc tế, bao gồm hợp đồng và xuất nhập khẩu.'
+        },
+        {
+            icon: '/icons/ipo-huy-dong-von.svg',
+            title: 'IPO & Huy Động Vốn',
+            description: 'Hỗ trợ doanh nghiệp trong quá trình IPO và huy động vốn từ các nguồn đầu tư trong và ngoài nước.'
+        },
+        {
+            icon: '/icons/thu-hoi-no.svg',
+            title: 'Thu Hồi Nợ',
+            description: 'Dịch vụ tư vấn và hỗ trợ thu hồi nợ, đảm bảo quyền lợi của doanh nghiệp và cá nhân trong các tranh chấp về nợ.'
+        },
+        {
+            icon: '/icons/xay-dung-va-co-so-ha-tang.svg',
+            title: 'Xây Dựng Và Cơ Sở Hạ Tầng',
+            description: 'Tư vấn pháp lý và hỗ trợ trong các dự án xây dựng và cơ sở hạ tầng, bao gồm hợp đồng và giấy phép.'
+        },
+        {
+            icon: '/icons/tu-van-ma.svg',
+            title: 'Tư Vấn M&A',
+            description: 'Tư vấn và hỗ trợ pháp lý trong các giao dịch mua bán và sáp nhập doanh nghiệp (M&A).'
+        },
+        {
+            icon: '/icons/tai-chinh.svg',
+            title: 'Tài Chính',
+            description: 'Cung cấp dịch vụ tư vấn tài chính, đầu tư và hỗ trợ pháp lý liên quan đến các giao dịch tài chính.'
+        },
+        {
+            icon: '/icons/tu-van-nhuong-quyen-thuong-mai.svg',
+            title: 'Tư Vấn Nhượng Quyền Thương Mại',
+            description: 'Tư vấn pháp lý cho các bên nhượng quyền và nhận quyền trong hoạt động thương mại.'
+        }
     ];
+
 
     const pricingData = [
         {
@@ -154,9 +203,10 @@ const Section = () => {
                     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
                         {services.map((service, index) => (
                             <Link href={`/services/${service.title.toLowerCase().replace(/\s+/g, '-')}`} key={index}>
-                                <div className="bg-white p-6 rounded-lg shadow-md relative group hover:shadow-lg transition-shadow duration-300">
-                                    <div className="flex items-center mb-4">
-                                        <h3 className="text-lg font-semibold">{service.title}</h3>
+                                <div className="bg-white p-6 rounded-lg shadow-md relative group hover:shadow-lg transition-shadow duration-300 h-full flex flex-col">
+                                    <div className="flex-grow">
+                                        <h3 className="text-lg font-semibold mb-2 truncate">{service.title}</h3>
+                                        <p className="text-sm text-gray-600 line-clamp-3">{service.description}</p>
                                     </div>
                                     <div className="absolute top-0 right-0 w-0 h-0 border-t-[50px] border-t-red-600 border-l-[50px] border-l-transparent group-hover:border-t-red-700 transition-colors duration-300">
                                         <span className="absolute top-[-40px] right-[10px] text-white transform rotate-45">→</span>
@@ -281,6 +331,8 @@ const Section = () => {
                     </div>
                 </div>
             </section>
+
+
 
         </section>
     );
