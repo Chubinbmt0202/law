@@ -83,7 +83,7 @@ const Header = () => {
                             <Link href="/service" className="text-black hover:text-[#c41230]">Dịch vụ</Link>
                             <Link href="/linh-vuc" className="text-black hover:text-[#c41230]">Lĩnh Vực</Link>
                             <Link href="/tuyen-dung" className="text-black hover:text-[#c41230]">Tuyển Dụng</Link>
-                            <Link href="/lien-he" className="text-black hover:text-[#c41230]">Liên Hệ</Link>
+                            <Link href="/lienhe" className="text-black hover:text-[#c41230]">Liên Hệ</Link>
                         </nav>
                         <div className="flex items-center space-x-4">
                             <button className="text-black hover:text-[#c41230]">🇻🇳</button>

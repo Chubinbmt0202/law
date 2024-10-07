@@ -18,11 +18,13 @@ export default function Service() {
         {
             icon: '/icons/doanh-nghiep-va-dau-tu.svg',
             title: 'Doanh Nghiệp Và Đầu Tư',
+            path: '/doanhnghiepdautu',
             description: 'Tư vấn pháp lý toàn diện cho các doanh nghiệp và nhà đầu tư trong các hoạt động kinh doanh và đầu tư.'
         },
         {
             icon: '/icons/lao-dong.svg',
             title: 'Lao Động',
+            path: '/doanhnghiepdautu',
             description: 'Cung cấp giải pháp pháp lý liên quan đến lao động, hợp đồng lao động, và tranh chấp lao động.'
         },
         {
