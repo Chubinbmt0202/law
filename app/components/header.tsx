@@ -9,18 +9,18 @@ const Header = () => {
     const menuItems = {
         'Trang Chủ': { path: '/', subItems: [] },
         'Giới Thiệu': {
-            path: '/gioi-thieu',
+            path: '/about',
             subItems: [
-                { name: 'Công ty Luật Thiện Minh', path: '/gioi-thieu/cong-ty-luat-thien-minh' },
-                { name: 'Người sáng lập', path: '/gioi-thieu/nguoi-sang-lap' },
+                { name: 'Công ty Luật Thiện Minh', path: '/about' },
+                { name: 'Nhân sự', path: '/employee' },
             ]
         },
         'Dịch Vụ': {
-            path: '/dich-vu',
+            path: '/',
             subItems: [
-                { name: 'Thành lập Doanh nghiệp trọn gói', path: '/dich-vu/thanh-lap-doanh-nghiep-tron-goi' },
-                { name: 'Kế toán Doanh nghiệp', path: '/dich-vu/ke-toan-doanh-nghiep' },
-                { name: 'Đăng ký Bảo Hộ Nhãn Hiệu', path: '/dich-vu/dang-ky-bao-ho-nhan-hieu' },
+                { name: 'Thành lập Doanh nghiệp trọn gói', path: '/' },
+                { name: 'Kế toán Doanh nghiệp', path: '/service/ketoanphapluat' },
+                { name: 'Đăng ký Bảo Hộ Nhãn Hiệu', path: '/service/baohonhanhieu' },
             ]
         },
         'Kiến Thức Pháp Luật': {
@@ -34,7 +34,7 @@ const Header = () => {
             ]
         },
         'Tin Tức Pháp Luật': { path: '/tin-tuc-phap-luat', subItems: [] },
-        'Liên Hệ': { path: '/lien-he', subItems: [] }
+        'Liên Hệ': { path: '/contacts', subItems: [] }
     };
     const [openMenu, setOpenMenu] = useState<string | null>(null); // Trạng thái cho dropdown
 
@@ -47,13 +47,13 @@ const Header = () => {
     };
     return (
         <>
-            <header className="bg-white shadow w-full">
+            <header className="bg-white shadow w-full fixed top-0 left-0 right-0 z-50">
                 <div className="max-w-7xl mx-auto p-6">
                     <div className="flex items-center justify-between">
                         <div className="text-2xl font-bold text-blue-800">
-                            <h3>AN KHANG</h3>
+                            <h3>Luật Thiện Minh</h3>
                         </div>
-                        <nav className="flex space-x-6 relative z-50">
+                        <nav className="flex space-x-6 relative">
                             {Object.entries(menuItems).map(([key, { path, subItems }]) => (
                                 <div
                                     key={key}
