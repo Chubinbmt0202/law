@@ -98,18 +98,7 @@ export default function NhanSuVanHanhPage() {
 
                 {/* Overlay text */}
                 <div className="absolute max-w-7xl mx-auto inset-0 flex flex-col justify-end items-start p-8 text-white">
-                    <h1 className="text-4xl md:text-5xl font-bold mb-4">Nhân Sự </h1>
-                    <nav className="text-sm">
-                        <ol className="list-none p-0 inline-flex">
-                            <li className="flex items-center">
-                                <a href="/" className="text-white hover:text-gray-300">Trang chủ</a>
-                                <span className="mx-2">/</span>
-                            </li>
-                            <li className="flex items-center">
-                                Nhân Sự
-                            </li>
-                        </ol>
-                    </nav>
+                    <h1 className="text-4xl md:text-center md:text-5xl font-bold mb-4">Nhân Sự </h1>
                 </div>
             </div>
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

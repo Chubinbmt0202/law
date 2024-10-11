@@ -41,28 +41,7 @@ export default function Contact() {
                                 </div>
                             </div>
                             <div>
-                                <label htmlFor="area" className="block mb-1">Lĩnh vực *</label>
-                                <select id="area" name="area" className="w-full p-2 border rounded" required>
-                                    <option value="">Tư vấn doanh nghiệp</option>
-                                    {/* Thêm các option khác */}
-                                </select>
-                            </div>
-                            <div>
-                                <label htmlFor="service" className="block mb-1">Dịch vụ cần tư vấn *</label>
-                                <select id="service" name="service" className="w-full p-2 border rounded" required>
-                                    <option value="">Doanh nghiệp</option>
-                                    {/* Thêm các option khác */}
-                                </select>
-                            </div>
-                            <div>
-                                <label htmlFor="city" className="block mb-1">Tỉnh thành *</label>
-                                <select id="city" name="city" className="w-full p-2 border rounded" required>
-                                    <option value="">--Please choose an option--</option>
-                                    {/* Thêm các option khác */}
-                                </select>
-                            </div>
-                            <div>
-                                <label htmlFor="message" className="block mb-1">Nội dung *</label>
+                                <label htmlFor="message" className="block mb-1">Dịch vụ cần tư vấn *</label>
                                 <textarea id="message" name="message" rows={4} className="w-full p-2 border rounded" placeholder="Nhập nội dung..." required></textarea>
                             </div>
                             <button type="submit" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition-colors duration-300">

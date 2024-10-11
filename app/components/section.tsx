@@ -1,6 +1,7 @@
 // app/components/section.tsx
 import Image from 'next/image';
 import Link from 'next/link';
+import Contact from './contact';
 
 const Section = () => {
     const challenges = [
@@ -46,10 +47,10 @@ const Section = () => {
         },
     ];
     return (
-        <section className="py-16 bg-white mt-16">
+        <section className="py-16 bg-white mt-16 md:mt-1">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center">
-                    <div className="md:w-1/2 mb-8 sm:mt-8 md:mt-t8 mt-[-100px] md:mb-0">
+                    <div className="md:w-1/2 mb-8 sm:mt-8 lg:mt-4 md:mt-t8 mt-[-100px] md:mb-0">
                         <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ LUẬT THIỆN MINH</h3>
                         <h2 className="text-3xl font-bold mb-4">Công ty luật THIỆN MINH cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
                         <p className="text-gray-600 mb-6">
@@ -128,7 +129,7 @@ const Section = () => {
                                 <td className="border border-gray-300 p-4">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Đăng ký với cơ quan quản lý thuế (Luật An Khang sẽ hỗ trợ khai báo với cơ quan thuế)</td>
+                                <td className="border border-gray-300 p-4">Đăng ký với cơ quan quản lý thuế (Luật Thiện Minh sẽ hỗ trợ khai báo với cơ quan thuế)</td>
                                 <td className="border border-gray-300 p-4">Kh&#244;ng</td>
                                 <td className="border border-gray-300 p-4">✔</td>
                                 <td className="border border-gray-300 p-4">✔</td>
@@ -270,7 +271,7 @@ const Section = () => {
             </div>
 
             <section className="py-16">
-                <h2 className="text-center text-4xl font-bold mb-8 text-red-600">CÁC BƯỚC THÀNH LẬP CÔNG TY</h2>
+                <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 text-red-600">CÁC BƯỚC THÀNH LẬP CÔNG TY</h2>
                 <div className="flex flex-col md:flex-row justify-between max-w-7xl mx-auto px-4">
                     {steps.map((step, index) => (
                         <div key={index} className="border border-gray-300 rounded-lg p-6 mb-8 md:mb-0 flex-1 text-center shadow-md mx-2">
@@ -311,7 +312,7 @@ const Section = () => {
             </section>
 
             <section className="py-16">
-                <h2 className="text-center text-4xl font-bold mb-8 text-red-600">NHỮNG KHÓ KHĂN KHI BẠN THÀNH LẬP CÔNG TY</h2>
+                <h2 className="text-center text-2xl md:text-4xl font-bold mb-8 text-red-600">NHỮNG KHÓ KHĂN KHI BẠN THÀNH LẬP CÔNG TY</h2>
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                         {challenges.map((challenge, index) => (
@@ -324,80 +325,7 @@ const Section = () => {
                 </div>
             </section>
 
-            {/* ........ */}
-            <section className="py-16 bg-gray-100">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h2 className="text-3xl font-bold text-red-600 mb-6">Thông tin liên hệ</h2>
-                            <div className="space-y-4">
-                                <div className="flex items-center">
-                                    {/* <PhoneIcon className="h-6 w-6 text-red-600 mr-2" /> */}
-                                    <p>Hotline: (+84) 911 357 447</p>
-                                </div>
-                                <div className="flex items-center">
-                                    {/* <EnvelopeIcon className="h-6 w-6 text-red-600 mr-2" /> */}
-                                    <p>Email: info@apolatlegal.com</p>
-                                </div>
-                                <div className="flex items-start">
-                                    {/* <MapPinIcon className="h-6 w-6 text-red-600 mr-2 mt-1" /> */}
-                                    <div>
-                                        <p className="font-semibold">Văn phòng tại Đà Nẵng:</p>
-                                        <p>64 Lê Đại Hành, Khuê Trung, Cẩm lệ, Thành phố Đà Nẵng, Việt Nam</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 className="text-3xl font-bold text-red-600 mb-6">Gửi yêu cầu tư vấn</h2>
-                            <form className="space-y-4">
-                                <div>
-                                    <label htmlFor="name" className="block mb-1">Họ tên *</label>
-                                    <input type="text" id="name" name="name" className="w-full p-2 border rounded" placeholder="Nhập họ tên..." required />
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="phone" className="block mb-1">Số điện thoại *</label>
-                                        <input type="tel" id="phone" name="phone" className="w-full p-2 border rounded" placeholder="Nhập số điện thoại..." required />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="email" className="block mb-1">Email</label>
-                                        <input type="email" id="email" name="email" className="w-full p-2 border rounded" placeholder="Nhập email..." />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="area" className="block mb-1">Lĩnh vực *</label>
-                                    <select id="area" name="area" className="w-full p-2 border rounded" required>
-                                        <option value="">Tư vấn doanh nghiệp</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="service" className="block mb-1">Dịch vụ cần tư vấn *</label>
-                                    <select id="service" name="service" className="w-full p-2 border rounded" required>
-                                        <option value="">Doanh nghiệp</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="city" className="block mb-1">Tỉnh thành *</label>
-                                    <select id="city" name="city" className="w-full p-2 border rounded" required>
-                                        <option value="">--Please choose an option--</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block mb-1">Nội dung *</label>
-                                    <textarea id="message" name="message" rows={4} className="w-full p-2 border rounded" placeholder="Nhập nội dung..." required></textarea>
-                                </div>
-                                <button type="submit" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition-colors duration-300">
-                                    Gửi đi
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Contact />
 
 
 

@@ -19,12 +19,12 @@ const Banner = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50">
                 <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col md:text-center justify-center md:items-start sm:flex">
                     {/* Tiêu đề lớn */}
-                    <h2 className="text-white text-3xl font-bold mb-4 text-center">
+                    <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 text-center">
                         DỊCH VỤ THÀNH LẬP CÔNG TY
                     </h2>
 
                     {/* Giá */}
-                    <h1 className="text-yellow-200 text-5xl font-bold mb-6 text-center">
+                    <h1 className="text-yellow-200 text-5xl md:text-8xl font-bold mb-6 text-center">
                         690.000 VNĐ
                     </h1>
 
@@ -34,7 +34,7 @@ const Banner = () => {
                     </p>
 
                     <p className="text-white mb-6 text-center">
-                        Dịch vụ thành lập doanh nghiệp - Chọn Luật An Khang, vững bước khởi nghiệp thành công!
+                        Dịch vụ thành lập doanh nghiệp - Chọn Luật Thiện Minh, vững bước khởi nghiệp thành công!
                     </p>
 
                     {/* Nút CTA */}
