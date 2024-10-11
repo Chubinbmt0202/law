@@ -46,10 +46,10 @@ const Section = () => {
         },
     ];
     return (
-        <section className="py-16 bg-white">
+        <section className="py-16 bg-white mt-16">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                <div className="flex flex-col md:flex-row items-center justify-center">
-                    <div className="md:w-1/2 mb-8 mt-[-100px] md:mb-0">
+                <div className="flex flex-col md:flex-row items-center">
+                    <div className="md:w-1/2 mb-8 sm:mt-8 md:mt-t8 mt-[-100px] md:mb-0">
                         <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ LUẬT THIỆN MINH</h3>
                         <h2 className="text-3xl font-bold mb-4">Công ty luật THIỆN MINH cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
                         <p className="text-gray-600 mb-6">
@@ -64,7 +64,7 @@ const Section = () => {
                             Câu chuyện của chúng tôi
                         </Link>
                     </div>
-                    <div className="md:w-1/2 relative">
+                    <div className="md:w-1/2 relative hidden md:block">
                         <div className="w-full aspect-square relative">
                             <Image
                                 src="/images/secction.png"
@@ -80,147 +80,149 @@ const Section = () => {
             {/* .................. */}
             <h2 className="text-center text-4xl font-bold mt-10 mb-6">Chi phí trọn gói dịch vụ thành lập công ty của Luật Thiện Minh</h2>
             <div className="max-w-7xl mx-auto py-6">
-                <table className="min-w-full">
-                    <thead>
-                        <tr className="bg-blue-100 text-black">
-                            <th className="border border-gray-300 p-4">Dịch vụ cung cấp</th>
-                            <th className="border border-gray-300 p-4">Gói tối giản</th>
-                            <th className="border border-gray-300 p-4">Gói cơ bản</th>
-                            <th className="border border-gray-300 p-4">Gói nâng cao</th>
-                            <th className="border border-gray-300 p-4">Gói vip</th>
-                        </tr>
-                        <tr className="bg-blue-800 text-white">
-                            <th className="border border-gray-300 p-4">Dịch vụ</th>
-                            <th className="border border-gray-300 p-4">690.000</th>
-                            <th className="border border-gray-300 p-4">1.590.000</th>
-                            <th className="border border-gray-300 p-4">3.790.000</th>
-                            <th className="border border-gray-300 p-4">4.590.000</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Thời gian được chấp thuận Mã Số Doanh Nghiệp / MST</td>
-                            <td className="border border-gray-300 p-4">10 - 12 ngày<br /></td>
-                            <td className="border border-gray-300 p-4">07 - 09 ngày</td>
-                            <td className="border border-gray-300 p-4">06 - 08 ngày</td>
-                            <td className="border border-gray-300 p-4">06 - 08 ngày</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Giấy chứng nhận đăng ký doanh nghiệp</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Miễn phí thuế môn bài năm đầu tiên. Trị giá 2.000.000</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Miễn phí thủ tục khai báo thuế môn bài cho doanh nghiệp mới thành lập</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Đăng ký với cơ quan quản lý thuế (Luật An Khang sẽ hỗ trợ khai báo với cơ quan thuế)</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Bố cáo thành lập doanh nghiệp lên cổng thông tin dịch vụ quốc gia.</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Tặng gói tư vấn pháp lý cơ bản sau thành lập: Tư vấn cơ bản về kế toán, thuế, các ngành nghề kinh doanh có điều kiện, các loại hợp đồng cơ bản…</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">02 tháng
-                                (trị giá 2.000.000)</td>
-                            <td className="border border-gray-300 p-4">04 tháng
-                                (trị giá 4.000.000)</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Tặng gói ý tưởng logo thương hiệu</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">04 mẫu ý tưởng
-                                (trị giá 500.000)</td>
-                            <td className="border border-gray-300 p-4">08 mẫu ý tưởng
-                                (trị giá 1.000.000)</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Thanh toán đặt cọc chi phí dịch vụ</td>
-                            <td className="border border-gray-300 p-4">đặt cọc 100%
-                                chi phí</td>
-                            <td className="border border-gray-300 p-4">đặt cọc 50%
-                                chi phí</td>
-                            <td className="border border-gray-300 p-4">Không cần đặt cọc
-                                (thanh toán chi phí khi được chấp thuận MST)</td>
-                            <td className="border border-gray-300 p-4">Không cần đặt cọc
-                                (thanh toán chi phí khi được chấp thuận MST)</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">01 Dấu tròn công ty Trị giá 350.000</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">01 Dấu chức danh. Trị giá 170.000</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">01 Biển công ty chất liệu mica. Trị giá 200.000</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                            <td className="border border-gray-300 p-4">✔</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Miễn phí mở tài khoản ngân hàng số đẹp (Vietcombank, Techcombank, VPBank, MB) ngân hàng hỗ trợ mở tài khoản online KH không phải ra quầy</td>
-                            <td className="border border-gray-300 p-4">Miễn phí</td>
-                            <td className="border border-gray-300 p-4">Miễn phí</td>
-                            <td className="border border-gray-300 p-4">Miễn phí</td>
-                            <td className="border border-gray-300 p-4">Miễn phí</td>
-                        </tr>
-                        <tr>
-                            <td className="border border-gray-300 p-4">Chữ ký số (Chứng thư điện tử)</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                            <td className="border border-gray-300 p-4">Chữ kí số 01 năm</td>
-                            <td className="border border-gray-300 p-4">Chữ kí số 03 năm</td>
-                        </tr>
-                        <tr>
-                            <td className=" p-4"></td>
-                            <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
-                                Nhận tư vấn
-                            </p></td>
-                            <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
-                                Nhận tư vấn
-                            </p></td>
-                            <td className=" p-4 w-[200px] "><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
-                                Nhận tư vấn
-                            </p></td>
-                            <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
-                                Nhận tư vấn
-                            </p></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div className="overflow-x-auto">
+                    <table className="min-w-full table-auto md:text-sm lg:text-sm">
+                        <thead>
+                            <tr className="bg-blue-100 text-black">
+                                <th className="border border-gray-300 p-4">Dịch vụ cung cấp</th>
+                                <th className="border border-gray-300 p-4">Gói tối giản</th>
+                                <th className="border border-gray-300 p-4">Gói cơ bản</th>
+                                <th className="border border-gray-300 p-4">Gói nâng cao</th>
+                                <th className="border border-gray-300 p-4">Gói vip</th>
+                            </tr>
+                            <tr className="bg-blue-800 text-white">
+                                <th className="border border-gray-300 p-4">Dịch vụ</th>
+                                <th className="border border-gray-300 p-4">690.000</th>
+                                <th className="border border-gray-300 p-4">1.590.000</th>
+                                <th className="border border-gray-300 p-4">3.790.000</th>
+                                <th className="border border-gray-300 p-4">4.590.000</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Thời gian được chấp thuận Mã Số Doanh Nghiệp / MST</td>
+                                <td className="border border-gray-300 p-4">10 - 12 ngày<br /></td>
+                                <td className="border border-gray-300 p-4">07 - 09 ngày</td>
+                                <td className="border border-gray-300 p-4">06 - 08 ngày</td>
+                                <td className="border border-gray-300 p-4">06 - 08 ngày</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Giấy chứng nhận đăng ký doanh nghiệp</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Miễn phí thuế môn bài năm đầu tiên. Trị giá 2.000.000</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Miễn phí thủ tục khai báo thuế môn bài cho doanh nghiệp mới thành lập</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Đăng ký với cơ quan quản lý thuế (Luật An Khang sẽ hỗ trợ khai báo với cơ quan thuế)</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Bố cáo thành lập doanh nghiệp lên cổng thông tin dịch vụ quốc gia.</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Tặng gói tư vấn pháp lý cơ bản sau thành lập: Tư vấn cơ bản về kế toán, thuế, các ngành nghề kinh doanh có điều kiện, các loại hợp đồng cơ bản…</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">02 tháng
+                                    (trị giá 2.000.000)</td>
+                                <td className="border border-gray-300 p-4">04 tháng
+                                    (trị giá 4.000.000)</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Tặng gói ý tưởng logo thương hiệu</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">04 mẫu ý tưởng
+                                    (trị giá 500.000)</td>
+                                <td className="border border-gray-300 p-4">08 mẫu ý tưởng
+                                    (trị giá 1.000.000)</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Thanh toán đặt cọc chi phí dịch vụ</td>
+                                <td className="border border-gray-300 p-4">đặt cọc 100%
+                                    chi phí</td>
+                                <td className="border border-gray-300 p-4">đặt cọc 50%
+                                    chi phí</td>
+                                <td className="border border-gray-300 p-4">Không cần đặt cọc
+                                    (thanh toán chi phí khi được chấp thuận MST)</td>
+                                <td className="border border-gray-300 p-4">Không cần đặt cọc
+                                    (thanh toán chi phí khi được chấp thuận MST)</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">01 Dấu tròn công ty Trị giá 350.000</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">01 Dấu chức danh. Trị giá 170.000</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">01 Biển công ty chất liệu mica. Trị giá 200.000</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-4">✔</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Miễn phí mở tài khoản ngân hàng số đẹp (Vietcombank, Techcombank, VPBank, MB) ngân hàng hỗ trợ mở tài khoản online KH không phải ra quầy</td>
+                                <td className="border border-gray-300 p-4">Miễn phí</td>
+                                <td className="border border-gray-300 p-4">Miễn phí</td>
+                                <td className="border border-gray-300 p-4">Miễn phí</td>
+                                <td className="border border-gray-300 p-4">Miễn phí</td>
+                            </tr>
+                            <tr>
+                                <td className="border border-gray-300 p-4">Chữ ký số (Chứng thư điện tử)</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-4">Chữ kí số 01 năm</td>
+                                <td className="border border-gray-300 p-4">Chữ kí số 03 năm</td>
+                            </tr>
+                            <tr>
+                                <td className=" p-4"></td>
+                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                    Nhận tư vấn
+                                </p></td>
+                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                    Nhận tư vấn
+                                </p></td>
+                                <td className=" p-4 w-[200px] "><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                    Nhận tư vấn
+                                </p></td>
+                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                    Nhận tư vấn
+                                </p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
 
             <div className='max-w-7xl mx-auto pt-6'>
@@ -291,16 +293,16 @@ const Section = () => {
                         Với khách hàng cần gấp chúng tôi cung cấp dịch vụ đăng ký thành lập công ty
                         trong 1 ngày làm việc hoàn thành tất cả các công việc.
                     </p>
-                    <div className="flex justify-between">
-                        <div className="text-center flex-1 mx-2 bg-white p-4 rounded-lg shadow-md">
+                    <div className="flex justify-between flex-col md:flex-row">
+                        <div className="text-center flex-1 mx-2 my-4 bg-white p-4 rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-black">01 NGÀY</div>
                             <p className='text-black'>Tư vấn, soạn hồ sơ, trình khách hàng ký hồ sơ và nộp hồ sơ thành lập công ty ở Sở KH&ĐT.</p>
                         </div>
-                        <div className="text-center flex-1 mx-2 bg-white p-4 rounded-lg shadow-md">
+                        <div className="text-center flex-1 mx-2 my-4 bg-white p-4 rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-black">02 NGÀY</div>
                             <p className='text-black'>Sở KH&ĐT kiểm tra hồ sơ của doanh nghiệp và cấp giấy phép kinh doanh.</p>
                         </div>
-                        <div className="text-center flex-1 mx-2  bg-white p-4 rounded-lg shadow-md">
+                        <div className="text-center flex-1 mx-2 my-4 bg-white p-4 rounded-lg shadow-md">
                             <div className="text-2xl font-bold text-black">03 NGÀY</div>
                             <p className='text-black'>Khắc dấu và đăng ký sử dụng.</p>
                         </div>
