@@ -32,7 +32,7 @@ const Header = () => {
                 { name: 'Văn bản Pháp luật', path: '/kien-thuc-phap-luat/van-ban-phap-luat' }
             ]
         },
-        'Tin Tức Pháp Luật': { path: '/tin-tuc-phap-luat', subItems: [] },
+        'Tin Tức Pháp Luật': { path: '/service/landingpage', subItems: [] },
         'Liên Hệ': { path: '/contacts', subItems: [] }
     };
 
