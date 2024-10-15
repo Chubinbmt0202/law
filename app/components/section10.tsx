@@ -48,8 +48,8 @@ const Section10 = () => {
             <h2 className="text-4xl font-bold text-center text-red-800 mt-2">1.200.000VNĐ ĐÃ BAO GỒM</h2>
             <hr className="mx-auto" style={{ width: '10%' }} />
 
-            <div className="flex justify-center mt-10 items-center">
-                <div className="bg-white p-6 w-1/3 rounded-lg ">
+            <div className="flex justify-center flex-col md:flex-row mt-10 items-center">
+                <div className="bg-white p-6 md:w-1/3 rounded-lg ">
                     <div className="flex mt-2 pr-3">
                         <Image
                             width={600}
@@ -60,7 +60,7 @@ const Section10 = () => {
                         />
                     </div>
                 </div>
-                <div className="bg-white p-6 w-1/3 rounded-lg ">
+                <div className="bg-white mx-5 p-6 md:w-1/3 rounded-lg ">
                     <ul >
                         <li className="my-2">✔️ Lệ phí nộp hồ sơ đăng ký doanh nghiệp và cấp giấy phép kinh doanh</li>
                         <li className="my-2">✔️ Lệ phí khác dấu và công bố mẫu dấu công ty lên Cổng thông tin Doanh Nghiệp Quốc Gia</li>
@@ -75,7 +75,7 @@ const Section10 = () => {
 
 
             </div>
-            <section className="py-16 bg-gray-100">
+            <section className="py-16 mx-5 bg-gray-100">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div>

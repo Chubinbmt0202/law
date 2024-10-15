@@ -4,11 +4,11 @@ import Image from "next/image";
 const Section7 = () => {
     return (
         <div className="py-10  h-full bg-blue-900 ">
-            <h1 className="text-3xl font-bold text-center text-white">TẶNG MIỄN PHÍ</h1>
-            <h2 className="text-2xl max-w-4xl mx-auto font-bold text-center text-yellow-400 mb-2">Các mẫu văn bản được sử dụng trong "ĐĂNG KÝ DOANH NGHIỆP" Theo Luật doanh nghiệp 2020 mới nhất</h2>
+            <h1 className="md:text-3xl text-2xl font-bold text-center text-white">TẶNG MIỄN PHÍ</h1>
+            <h2 className="md:text-2xl text-xl max-w-4xl md:mx-auto mx-5 font-bold text-center text-yellow-400 mb-2">Các mẫu văn bản được sử dụng trong "ĐĂNG KÝ DOANH NGHIỆP" Theo Luật doanh nghiệp 2020 mới nhất</h2>
             <hr className="mx-auto" style={{ width: '10%' }} />
-            <div className="border-4 w-2/3 mt-2 mx-auto border-yellow-500 flex bg-white shadow-lg">
-                <div className="p-4 w-1/2 flex items-center">
+            <div className="border-4 flex-col md:flex-row md:w-2/3 mt-2 md:mx-auto mx-5 border-yellow-500 flex bg-white shadow-lg">
+                <div className="p-4 md:w-1/2 flex items-center">
                     <div>
                         <Image
                             width={60}
@@ -20,7 +20,7 @@ const Section7 = () => {
                     </div>
                     <h3 className="text-xl font-bold text-blue-600 ml-4">Theo Nghị định số 01/2021/NĐ-CP ngày 04/01/2021 của Bộ Kế hoạch và Đầu tư </h3>
                 </div>
-                <div className="p-4 w-1/2 flex items-center">
+                <div className="p-4 md:w-1/2 flex items-center">
                     <div>
                         <Image
                             width={60}
@@ -34,11 +34,11 @@ const Section7 = () => {
                 </div>
             </div>
 
-            <div className="max-w-2xl mx-auto text-center mt-8 p-4 ">
+            <div className="max-w-2xl md:mx-auto mx-5 text-center mt-8 p-4 ">
                 <h3 className="text-white font-bold text-2xl">Duy nhất cho 30 khách hàng đầu tiên</h3>
                 <h3 className="text-white font-bold text-2xl">Nhanh tay lên! Chỉ còn 5 suất cuối cùng</h3>
             </div>
-            <div className="max-w-2xl mx-auto mt-4 p-4 bg-gray-100 rounded shadow">
+            <div className="max-w-2xl md:mx-auto mx-5 mt-4 p-4 bg-gray-100 rounded shadow">
                 <form>
                     <div className="mb-4">
                         <input

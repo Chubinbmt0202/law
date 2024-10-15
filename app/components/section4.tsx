@@ -7,10 +7,10 @@ const Section4 = () => {
             <h1 className="text-3xl font-bold text-center">CHIA SẺ CỦA KHÁCH HÀNG VỀ</h1>
             <h2 className="text-2xl font-bold text-center text-yellow-800">DỊCH VỤ ĐĂNG KÝ THÀNH LẬP CÔNG TY của LUẬT THIỆN MINH</h2>
 
-            <div className="max-w-7xl mx-auto flex justify-around mt-5">
+            <div className="max-w-7xl mx-auto flex-col md:flex-row flex justify-around mt-5">
                 {/* Testimonial 1 */}
-                <div className="bg-white shadow-lg rounded-lg p-6 w-1/3 mx-5 text-center">
-                    <Image width={50} height={50} src="/images/testimonial1.jpg" alt="Chị Tường Vy" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                <div className="bg-white shadow-lg rounded-lg p-6 md:w-1/3 mt-3 mx-5 text-center">
+                    <Image width={50} height={50} src="/images/18.jpg" alt="Chị Tường Vy" className="w-24 h-24 rounded-full mx-auto mb-4" />
                     <h2 className="text-xl font-semibold">Chị Tường Vy</h2>
                     <p className="text-black-500">CEO Trần Anh</p>
                     <div className="text-yellow-400 mb-2">★★★★★</div>
@@ -20,8 +20,8 @@ const Section4 = () => {
                 </div>
 
                 {/* Testimonial 2 */}
-                <div className="bg-white shadow-lg rounded-lg p-6 w-1/3 mx-5 text-center">
-                    <Image width={50} height={50} src="/images/testimonial2.jpg" alt="Anh Nguyễn Hạ" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                <div className="bg-white shadow-lg rounded-lg p-6 md:w-1/3 mt-3 mx-5 text-center">
+                    <Image width={50} height={50} src="/images/17.jpg" alt="Anh Nguyễn Hạ" className="w-24 h-24 rounded-full mx-auto mb-4" />
                     <h2 className="text-xl font-semibold">Anh Nguyễn Hạ</h2>
                     <p className="text-black-500">CEO Hải Anh Group</p>
                     <div className="text-yellow-400 mb-2">★★★★★</div>
@@ -31,8 +31,8 @@ const Section4 = () => {
                 </div>
 
                 {/* Testimonial 3 */}
-                <div className="bg-white shadow-lg rounded-lg p-6 w-1/3 mx-5 text-center">
-                    <Image width={50} height={50} src="/images/testimonial3.jpg" alt="Chị Thu Thảo" className="w-24 h-24 rounded-full mx-auto mb-4" />
+                <div className="bg-white shadow-lg rounded-lg p-6 md:w-1/3 mt-3 mx-5 text-center">
+                    <Image width={50} height={50} src="/images/19.jpg" alt="Chị Thu Thảo" className="w-24 h-24 rounded-full mx-auto mb-4" />
                     <h2 className="text-xl font-semibold">Chị Thu Thảo</h2>
                     <p className="text-black-500">CEO Elsa Speak</p>
                     <div className="text-yellow-400 mb-2">★★★★★</div>

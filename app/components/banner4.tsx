@@ -3,12 +3,12 @@ import Image from "next/image";
 // app/components/Banner.js
 const Banner4 = () => {
     return (
-        <div className=" w-full flex items-center justify-center mt-20">
+        <div className=" w-full flex  items-center justify-center mt-20">
             {/* Hình ảnh nền */}
             <div className="w-full h-full inset-0 bg-black bg-opacity-3" style={{ backgroundImage: "url('/images/1.jpg')" }}>
                 <div className="">
                     <div className="max-w-7xl mx-auto relative flex"> {/* Thay đổi ở đây để sử dụng flexbox */}
-                        <div className="w-1/2 mt-20"> {/* Cột bên trái */}
+                        <div className="w-1/2 hidden md:block mt-10"> {/* Cột bên trái */}
                             <Image
                                 width={500}
                                 height={500}
@@ -16,7 +16,7 @@ const Banner4 = () => {
                                 alt="Background"
                             />
                         </div>
-                        <div className="w-1/2 mt-32"> {/* Cột bên phải */}
+                        <div className="md:w-1/2 mx-auto md:mt-20 mt-10"> {/* Cột bên phải */}
                             {/* Nội dung cột bên phải */}
                             <h1 className="text-xl font-bold text-white ml-4">TRUNG TÂM HỖ TRỢ DOANH NGHIỆP ĐÀ NẴNG</h1>
 
@@ -37,7 +37,7 @@ const Banner4 = () => {
                                 alt="Background"
                                 className="ml-4"
                             />
-                            <div className="inset-0 h-[200px] bg-blue-900">
+                            <div className="inset-0 h-[200px] bg-blue-900 hidden md:block mb-10">
                                 <div className="relative flex">
                                     <ul className="w-1/2 text-white m-4">
                                         <div className="flex">
@@ -103,6 +103,16 @@ const Banner4 = () => {
                                 </div>
                             </div>
                         </div>
+
+                    </div>
+                    <div className="flex items-center flex-col mb-3 md:hidden">
+                        <Image
+                            width={400}
+                            height={400}
+                            src="/images/16.png"
+                            alt="Background"
+                            className="ml-4"
+                        />
                     </div>
                 </div>
             </div>

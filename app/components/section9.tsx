@@ -8,7 +8,7 @@ const Section9 = () => {
             <h2 className="text-2xl max-w-4xl mx-auto font-bold text-center text-yellow-400 mb-2">Trong tất cả các loại hình doanh nghiệp</h2>
             <hr className="mx-auto" style={{ width: '10%' }} />
 
-            <div className="flex max-w-7xl mx-auto justify-center mt-6">
+            <div className="flex md:flex-row flex-col max-w-7xl mx-auto justify-center mt-6">
                 <div className=" items-center flex flex-col mx-4">
                     <Image src="/images/11.jpg" alt="Đăng ký hộ kinh doanh cá thể Đà Nẵng" width={200} height={150} />
                     <p className="text-white text-center font-bold mt-2">Đăng ký hộ kinh doanh cá thể Đà Nẵng</p>
