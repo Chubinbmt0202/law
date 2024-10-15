@@ -1,5 +1,5 @@
 
-import Image from "next/image";
+
 // app/components/Banner.js
 const Section5 = () => {
     return (

@@ -5,7 +5,7 @@ const Section7 = () => {
     return (
         <div className="py-10  h-full bg-blue-900 ">
             <h1 className="md:text-3xl text-2xl font-bold text-center text-white">TẶNG MIỄN PHÍ</h1>
-            <h2 className="md:text-2xl text-xl max-w-4xl md:mx-auto mx-5 font-bold text-center text-yellow-400 mb-2">Các mẫu văn bản được sử dụng trong "ĐĂNG KÝ DOANH NGHIỆP" Theo Luật doanh nghiệp 2020 mới nhất</h2>
+            <h2 className="md:text-2xl text-xl max-w-4xl md:mx-auto mx-5 font-bold text-center text-yellow-400 mb-2">Các mẫu văn bản được sử dụng trong &quot;ĐĂNG KÝ DOANH NGHIỆP&quot Theo Luật doanh nghiệp 2020 mới nhất</h2>
             <hr className="mx-auto" style={{ width: '10%' }} />
             <div className="border-4 flex-col md:flex-row md:w-2/3 mt-2 md:mx-auto mx-5 border-yellow-500 flex bg-white shadow-lg">
                 <div className="p-4 md:w-1/2 flex items-center">
