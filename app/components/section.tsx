@@ -1,7 +1,8 @@
 // app/components/section.tsx
 import Image from 'next/image';
 import Link from 'next/link';
-import Contact from './contact';
+// import Contact from './contact';
+import Section11 from './section11';
 
 const Section = () => {
     const challenges = [
@@ -80,144 +81,144 @@ const Section = () => {
             </div>
             {/* .................. */}
             <h2 className="text-center text-4xl font-bold mt-10 mb-6">Chi phí trọn gói dịch vụ thành lập công ty của Luật Thiện Minh</h2>
-            <div className="max-w-7xl mx-auto py-6">
-                <div className="overflow-x-auto">
-                    <table className="min-w-full table-auto md:text-sm lg:text-sm">
+            <div className=" py-6">
+                <div className="md:max-w-7xl max-w-full mx-auto py-6">
+                    <table className="min-w-full table-auto text-xs sm:text-sm md:text-xs lg:text-xs">
                         <thead>
                             <tr className="bg-blue-100 text-black">
-                                <th className="border border-gray-300 p-4">Dịch vụ cung cấp</th>
-                                <th className="border border-gray-300 p-4">Gói tối giản</th>
-                                <th className="border border-gray-300 p-4">Gói cơ bản</th>
-                                <th className="border border-gray-300 p-4">Gói nâng cao</th>
-                                <th className="border border-gray-300 p-4">Gói vip</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Dịch vụ cung cấp</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Gói tối giản</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Gói cơ bản</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Gói nâng cao</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Gói vip</th>
                             </tr>
                             <tr className="bg-blue-800 text-white">
-                                <th className="border border-gray-300 p-4">Dịch vụ</th>
-                                <th className="border border-gray-300 p-4">690.000</th>
-                                <th className="border border-gray-300 p-4">1.590.000</th>
-                                <th className="border border-gray-300 p-4">3.790.000</th>
-                                <th className="border border-gray-300 p-4">4.590.000</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Dịch vụ</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">690.000</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">1.590.000</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">3.790.000</th>
+                                <th className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">4.590.000</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td className="border border-gray-300 p-4">Thời gian được chấp thuận Mã Số Doanh Nghiệp / MST</td>
-                                <td className="border border-gray-300 p-4">10 - 12 ngày<br /></td>
-                                <td className="border border-gray-300 p-4">07 - 09 ngày</td>
-                                <td className="border border-gray-300 p-4">06 - 08 ngày</td>
-                                <td className="border border-gray-300 p-4">06 - 08 ngày</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Thời gian được chấp thuận Mã Số Doanh Nghiệp / MST</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">10 - 12 ngày<br /></td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">07 - 09 ngày</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">06 - 08 ngày</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">06 - 08 ngày</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Giấy chứng nhận đăng ký doanh nghiệp</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Giấy chứng nhận đăng ký doanh nghiệp</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Miễn phí thuế môn bài năm đầu tiên. Trị giá 2.000.000</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí thuế môn bài năm đầu tiên. Trị giá 2.000.000</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Miễn phí thủ tục khai báo thuế môn bài cho doanh nghiệp mới thành lập</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí thủ tục khai báo thuế môn bài cho doanh nghiệp mới thành lập</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Đăng ký với cơ quan quản lý thuế (Luật Thiện Minh sẽ hỗ trợ khai báo với cơ quan thuế)</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Đăng ký với cơ quan quản lý thuế (Luật Thiện Minh sẽ hỗ trợ khai báo với cơ quan thuế)</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Bố cáo thành lập doanh nghiệp lên cổng thông tin dịch vụ quốc gia.</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Bố cáo thành lập doanh nghiệp lên cổng thông tin dịch vụ quốc gia.</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Tặng gói tư vấn pháp lý cơ bản sau thành lập: Tư vấn cơ bản về kế toán, thuế, các ngành nghề kinh doanh có điều kiện, các loại hợp đồng cơ bản…</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">02 tháng
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Tặng gói tư vấn pháp lý cơ bản sau thành lập: Tư vấn cơ bản về kế toán, thuế, các ngành nghề kinh doanh có điều kiện, các loại hợp đồng cơ bản…</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">02 tháng
                                     (trị giá 2.000.000)</td>
-                                <td className="border border-gray-300 p-4">04 tháng
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">04 tháng
                                     (trị giá 4.000.000)</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Tặng gói ý tưởng logo thương hiệu</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">04 mẫu ý tưởng
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Tặng gói ý tưởng logo thương hiệu</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">04 mẫu ý tưởng
                                     (trị giá 500.000)</td>
-                                <td className="border border-gray-300 p-4">08 mẫu ý tưởng
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">08 mẫu ý tưởng
                                     (trị giá 1.000.000)</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Thanh toán đặt cọc chi phí dịch vụ</td>
-                                <td className="border border-gray-300 p-4">đặt cọc 100%
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Thanh toán đặt cọc chi phí dịch vụ</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">đặt cọc 100%
                                     chi phí</td>
-                                <td className="border border-gray-300 p-4">đặt cọc 50%
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">đặt cọc 50%
                                     chi phí</td>
-                                <td className="border border-gray-300 p-4">Không cần đặt cọc
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Không cần đặt cọc
                                     (thanh toán chi phí khi được chấp thuận MST)</td>
-                                <td className="border border-gray-300 p-4">Không cần đặt cọc
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Không cần đặt cọc
                                     (thanh toán chi phí khi được chấp thuận MST)</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">01 Dấu tròn công ty Trị giá 350.000</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">01 Dấu tròn công ty Trị giá 350.000</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">01 Dấu chức danh. Trị giá 170.000</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">01 Dấu chức danh. Trị giá 170.000</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">01 Biển công ty chất liệu mica. Trị giá 200.000</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">✔</td>
-                                <td className="border border-gray-300 p-4">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">01 Biển công ty chất liệu mica. Trị giá 200.000</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Miễn phí mở tài khoản ngân hàng số đẹp (Vietcombank, Techcombank, VPBank, MB) ngân hàng hỗ trợ mở tài khoản online KH không phải ra quầy</td>
-                                <td className="border border-gray-300 p-4">Miễn phí</td>
-                                <td className="border border-gray-300 p-4">Miễn phí</td>
-                                <td className="border border-gray-300 p-4">Miễn phí</td>
-                                <td className="border border-gray-300 p-4">Miễn phí</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí mở tài khoản ngân hàng số đẹp (Vietcombank, Techcombank, VPBank, MB) ngân hàng hỗ trợ mở tài khoản online KH không phải ra quầy</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Miễn phí</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-4">Chữ ký số (Chứng thư điện tử)</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Kh&#244;ng</td>
-                                <td className="border border-gray-300 p-4">Chữ kí số 01 năm</td>
-                                <td className="border border-gray-300 p-4">Chữ kí số 03 năm</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Chữ ký số (Chứng thư điện tử)</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Chữ kí số 01 năm</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Chữ kí số 03 năm</td>
                             </tr>
                             <tr>
-                                <td className=" p-4"></td>
-                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" p-1 md:p-4 text-[10px] md:text-xl"></td>
+                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-4 w-[200px] "><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px] "><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-4 w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
                             </tr>
@@ -226,45 +227,46 @@ const Section = () => {
                 </div>
             </div>
 
+
             <div className='max-w-7xl mx-auto pt-6'>
                 <table className="min-w-full border border-gray-300 max-w-7xl">
                     <thead>
                         <tr className="bg-blue-800 text-white">
-                            <th className="border border-gray-300 p-4">Dịch vụ</th>
-                            <th className="border border-gray-300 p-4">Giá</th>
-                            <th className="border border-gray-300 p-4">Khuyến mãi</th>
+                            <th className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Dịch vụ</th>
+                            <th className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Giá</th>
+                            <th className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Khuyến mãi</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr>
-                            <td className="border border-gray-300 p-4">Thủ tục thông báo phát hành hóa đơn</td>
-                            <td className="border border-gray-300 p-4">500.000 VNĐ</td>
-                            <td className="border border-gray-300 p-4">Khi đăng ký gói kê khai thuế cơ bản theo quý (giảm 300.000 VNĐ) chỉ phí chỉ còn 200.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Thủ tục thông báo phát hành hóa đơn</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Khi đăng ký gói kê khai thuế cơ bản theo quý (giảm 300.000 VNĐ) chỉ phí chỉ còn 200.000 VNĐ</td>
                         </tr>
                         <tr>
-                            <td className="border border-gray-300 p-4">Gói khai thuế cơ bản theo quý</td>
-                            <td className="border border-gray-300 p-4">1.500.000 VNĐ / 01 quý</td>
-                            <td className="border border-gray-300 p-4">Khi sử dụng thành lập doanh nghiệp Gói nâng cao (Tặng 500.000 VNĐ)<br />Khi sử dụng thành lập doanh nghiệp Gói VIP (Tặng 1.000.000 VNĐ)</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Gói khai thuế cơ bản theo quý</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">1.500.000 VNĐ / 01 quý</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Khi sử dụng thành lập doanh nghiệp Gói nâng cao (Tặng 500.000 VNĐ)<br />Khi sử dụng thành lập doanh nghiệp Gói VIP (Tặng 1.000.000 VNĐ)</td>
                         </tr>
                         <tr>
-                            <td className="border border-gray-300 p-4">Hóa đơn điện tử số lượng: 200 HĐ xBill (không có thời hạn sử dụng)</td>
-                            <td className="border border-gray-300 p-4">500.000 VNĐ</td>
-                            <td className="border border-gray-300 p-4">Tặng phí khởi tạo trị giá 500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Hóa đơn điện tử số lượng: 200 HĐ xBill (không có thời hạn sử dụng)</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Tặng phí khởi tạo trị giá 500.000 VNĐ</td>
                         </tr>
                         <tr>
-                            <td className="border border-gray-300 p-4">Hóa đơn điện tử số lượng: 300 HĐ xBill (không có thời hạn sử dụng)</td>
-                            <td className="border border-gray-300 p-4">750.000 VNĐ</td>
-                            <td className="border border-gray-300 p-4">Tặng phí khởi tạo trị giá 500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Hóa đơn điện tử số lượng: 300 HĐ xBill (không có thời hạn sử dụng)</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">750.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Tặng phí khởi tạo trị giá 500.000 VNĐ</td>
                         </tr>
                         <tr>
-                            <td className="border border-gray-300 p-4">Chữ ký số (chứng thư điện tử) 01 năm</td>
-                            <td className="border border-gray-300 p-4">1.050.000 VNĐ</td>
-                            <td className="border border-gray-300 p-4">Tặng token USB trị giá 500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Chữ ký số (chứng thư điện tử) 01 năm</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">1.050.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Tặng token USB trị giá 500.000 VNĐ</td>
                         </tr>
                         <tr>
-                            <td className="border border-gray-300 p-4">Chữ ký số (chứng thư điện tử) 03 năm</td>
-                            <td className="border border-gray-300 p-4">2.550.000 VNĐ</td>
-                            <td className="border border-gray-300 p-4">Tặng token USB trị giá 500.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Chữ ký số (chứng thư điện tử) 03 năm</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">2.550.000 VNĐ</td>
+                            <td className="border border-gray-300 p-1 md:p-4 text-center text-[10px] md:text-xl md:text-start">Tặng token USB trị giá 500.000 VNĐ</td>
                         </tr>
                     </tbody>
                 </table>
@@ -325,10 +327,7 @@ const Section = () => {
                 </div>
             </section>
 
-            <Contact />
-
-
-
+            <Section11 />
         </section>
     );
 };

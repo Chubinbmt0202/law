@@ -17,19 +17,9 @@ const Header = () => {
         'Dịch Vụ': {
             path: '/service',
             subItems: [
-                { name: 'Thành lập Doanh nghiệp trọn gói', path: '/' },
+                { name: 'Thành lập Doanh nghiệp trọn gói', path: '/service/dichvuthanhlapdoanhnghiep' },
                 { name: 'Kế toán Doanh nghiệp', path: '/service/ketoanphapluat' },
                 { name: 'Đăng ký Bảo Hộ Nhãn Hiệu', path: '/service/baohonhanhieu' },
-            ]
-        },
-        'Kiến Thức Pháp Luật': {
-            path: '/kien-thuc-phap-luat',
-            subItems: [
-                { name: 'Pháp luật doanh nghiệp', path: '/kien-thuc-phap-luat/phap-luat-doanh-nghiep' },
-                { name: 'Pháp luật Kế toán', path: '/kien-thuc-phap-luat/phap-luat-ke-toan' },
-                { name: 'Bảo Hộ Nhãn Hiệu', path: '/kien-thuc-phap-luat/bao-ho-nhan-hieu' },
-                { name: 'Hỏi và Đáp', path: '/kien-thuc-phap-luat/hoi-va-dap' },
-                { name: 'Văn bản Pháp luật', path: '/kien-thuc-phap-luat/van-ban-phap-luat' }
             ]
         },
         'Tin Tức Pháp Luật': { path: '/service/landingpage', subItems: [] },

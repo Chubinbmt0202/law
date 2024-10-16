@@ -35,7 +35,7 @@ const Banner4 = () => {
                                 height={400}
                                 src="/images/4.png"
                                 alt="Background"
-                                className="ml-4"
+                                className="md:ml-4"
                             />
                             <div className="inset-0 h-[200px] bg-blue-900 hidden md:block mb-10">
                                 <div className="relative flex">
@@ -111,7 +111,7 @@ const Banner4 = () => {
                             height={400}
                             src="/images/16.png"
                             alt="Background"
-                            className="ml-4"
+                            className="md:ml-4"
                         />
                     </div>
                 </div>

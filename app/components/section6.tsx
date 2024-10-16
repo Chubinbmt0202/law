@@ -4,8 +4,8 @@ import Image from "next/image";
 const Section6 = () => {
     return (
         <div className="py-10 w-full h-full bg-black bg-cover" style={{ backgroundImage: "url('/images/9.png')" }}>
-            <h1 className="text-2xl md:text-3xl font-bold text-center">ĐĂNG KÝ THÀNH LẬP CÔNG TY TRỌN GÓI</h1>
-            <h2 className="text-xl md:text-2xl font-bold text-center text-yellow-800 mb-6">TRUNG TÂM HỖ TRỢ DOANH NGHIỆP ĐÀ NẴNG</h2>
+            <h1 className="text-xl md:max-w-7xl max-w-[300px] mx-auto md:text-3xl font-bold text-center">ĐĂNG KÝ THÀNH LẬP CÔNG TY TRỌN GÓI</h1>
+            <h2 className="text-xl md:text-2xl font-bold md:max-w-7xl max-w-[300px] mx-auto text-center text-yellow-800 mb-6">TRUNG TÂM HỖ TRỢ DOANH NGHIỆP ĐÀ NẴNG</h2>
 
 
             <div className="flex justify-center flex-col md:flex-row">
@@ -13,8 +13,8 @@ const Section6 = () => {
                 <div className="bg-white p-6 md:w-1/3 mx-5 mt-5 rounded-lg ">
                     <h2 className="text-xl font-bold mb-4">Giải pháp hoàn hảo dành cho bạn</h2>
                     <div className="flex items-center border-4 mb-4">
-                        <span className="text-white font-bold text-xl line-through bg-blue-900 px-12 p-5">1.600.000 ₫</span>
-                        <span className="text-red-500 font-bold text-4xl ml-3">1.200.000 ₫</span>
+                        <span className="text-white font-bold text-xl line-through bg-blue-900 md:px-12 p-5">1.600.000 ₫</span>
+                        <span className="text-red-500 font-bold md:text-4xl text-2xl ml-3">1.200.000 ₫</span>
                     </div>
                     <div className="text-center rounded-lg mb-4">
                         <p className="text-blue-700 font-semibold">Giảm ngay 25%</p>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import "./section7.css"
 
 // app/components/Banner.js
 const Section7 = () => {
@@ -69,9 +70,11 @@ const Section7 = () => {
                             />
                         </div>
                     </div>
-                    <button className="w-full bg-red-600 text-white py-2 rounded">
-                        ĐĂNG KÝ NHẬN TÀI LIỆU MIỄN PHÍ
-                    </button>
+                    <div className="flex justify-center"> {/* Thêm lớp flex và justify-center */}
+                        <button className="md:w-1/2 bg-red-600 text-white py-2 px-5 font-bold rounded-full animate-move-zoom">
+                            ĐĂNG KÝ NHẬN TÀI LIỆU MIỄN PHÍ
+                        </button>
+                    </div>
                 </form>
             </div>
         </div>

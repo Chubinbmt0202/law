@@ -11,6 +11,7 @@ import Section7 from '@/app/components/section7';
 import Section8 from '@/app/components/section8';
 import Section9 from '@/app/components/section9';
 import Section10 from '@/app/components/section10';
+import Section11 from '@/app/components/section11';
 // import Contact from '@/app/components/contact';
 
 export default function Landingpage() {
@@ -27,6 +28,7 @@ export default function Landingpage() {
             <Section8 />
             <Section9 />
             <Section10 />
+            <Section11 />
         </section>
     );
 }

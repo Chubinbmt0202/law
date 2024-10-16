@@ -1,0 +1,21 @@
+@keyframes moveZoom {
+    0% {
+        transform: translateY(0) scale(1);
+        /* Vị trí ban đầu */
+    }
+
+    50% {
+        transform: translateY(-5px) scale(1.05);
+        /* Di chuyển lên 10px và phóng to 5% */
+    }
+
+    100% {
+        transform: translateY(0) scale(1);
+        /* Về vị trí ban đầu */
+    }
+}
+
+.animate-move-zoom {
+    animation: moveZoom 1s infinite;
+    /* Thời gian 1 giây, lặp lại vô hạn */
+}
