@@ -209,16 +209,16 @@ const Section = () => {
                             </tr>
                             <tr>
                                 <td className=" p-1 md:p-4 text-[10px] md:text-xl"></td>
-                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-1 text-center md:px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-1 text-center md:px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px] "><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" md:p-4 text-[10px] md:text-xl w-[200px] "><p className="bg-red-600 text-white px-1 text-center md:px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
-                                <td className=" p-1 md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
+                                <td className=" md:p-4 text-[10px] md:text-xl w-[200px]"><p className="bg-red-600 text-white px-1 text-center md:px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                                     Nhận tư vấn
                                 </p></td>
                             </tr>

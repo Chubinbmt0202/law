@@ -47,9 +47,9 @@ export default function Batdongsan() {
             <Banner2 />
             {/* .................. */}
             <h2 className="text-center text-4xl font-bold mt-10 mb-6">Chi phí trọn gói dịch vụ thành lập công ty của Luật Thiện Minh</h2>
-            <div className="max-w-7xl mx-auto py-6">
-                <div className="overflow-x-auto">
-                    <table className="min-w-full border-collapse border border-gray-300">
+            <div className="py-6">
+                <div className="md:max-w-7xl max-w-full mx-auto py-6">
+                    <table className="min-w-full table-auto text-xs sm:text-sm md:text-xs lg:text-xs">
                         <thead>
                             <tr>
                                 <th className="border border-gray-300 p-4 bg-blue-500 text-white">TÊN</th>

@@ -33,7 +33,7 @@ const Section6 = () => {
                         <Image
                             width={600}
                             height={300}
-                            src="/images/10.jpg"
+                            src="/images/23.jpg"
                             alt="Background"
                             className="ml-4"
                         />
