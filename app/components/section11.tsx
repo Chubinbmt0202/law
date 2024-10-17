@@ -2,9 +2,49 @@
 
 import Image from "next/image";
 import React, { useEffect, useState } from 'react';
+import emailjs from '@emailjs/browser';
 import "./section7.css"
 // app/components/Banner.js
 const Section11 = () => {
+    const [name, setName] = useState('')
+    const [mail, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [content, setContent] = useState('')
+
+    const handleSubmit = (event: React.FormEvent) => {
+        event.preventDefault();
+        const formData = new FormData(event.target as HTMLFormElement);
+        const data = Object.fromEntries(formData);
+        console.log(data)
+
+        const service_id = 'service_jie9suc';
+        const template_id = 'template_lksus0w';
+        const public_key = 'B-i2SfOv21AzDyDII';
+
+
+        // create params
+        const template = {
+            from_name: name,
+            from_phone: phone,
+            from_email: mail,
+            from_content: content,
+        }
+        // Gửi email qua EmailJS
+        emailjs.send(service_id, template_id, template, public_key)
+            .then((response) => {
+                alert("Gửi biểu mẫu thành công")
+                console.log("Email gửi thành công", response)
+                setName("")
+                setPhone("")
+                setEmail("")
+                setContent("")
+            })
+            .catch((error) => {
+                alert("Lỗi khi gửi form")
+                console.log("Lỗi quần què chi đó", error)
+            })
+    };
+
     const [timeLeft, setTimeLeft] = useState({
         days: 0,
         hours: 0,
@@ -80,29 +120,41 @@ const Section11 = () => {
                     <h3 className="text-3xl font-bold text-blue-600">Bạn đang cần hỗ trợ đăng ký doanh nghiệp?</h3>
                     <h3 className="mb-4 font-bold">Đăng ký để được tư vấn MIẾN PHÍ ngay!</h3>
 
-                    <form>
+                    <form onSubmit={handleSubmit}>
                         <input
                             type="text"
                             placeholder="Họ và tên"
                             className="w-full p-2 border border-gray-300 rounded mb-4"
                             required
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            id="name"
                         />
                         <input
                             type="email"
                             placeholder="Email"
                             className="w-full p-2 border border-gray-300 rounded mb-4"
                             required
+                            value={mail}
+                            onChange={(e) => setEmail(e.target.value)}
+                            id="email"
                         />
                         <input
                             type="tel"
                             placeholder="Số điện thoại"
                             className="w-full p-2 border border-gray-300 rounded mb-4"
                             required
+                            value={phone}
+                            onChange={(e) => setPhone(e.target.value)}
+                            id="phone"
                         />
                         <textarea
                             placeholder="Nội dung tư vấn"
                             className="w-full p-2 border border-gray-300 rounded mb-4"
                             required
+                            value={content}
+                            onChange={(e) => setContent(e.target.value)}
+                            id="message"
                         ></textarea>
                         <button type="submit" className="w-full bg-red-600 text-white py-2 rounded">
                             GỬI THÔNG TIN
