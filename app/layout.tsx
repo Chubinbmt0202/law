@@ -17,6 +17,9 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
+  icons: {
+    icon: '/images/25.jpg'
+  },
   title: "Công ty luật Thiện Minh",
   description: "Công ty luật Thiện Minh",
 };
