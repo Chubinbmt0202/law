@@ -10,13 +10,14 @@ import Section6 from "./components/section6";
 import Section7 from "./components/section7";
 import Section8 from "./components/section8";
 import Section9 from "./components/section9";
+import Section2 from "./components/section2";
 
 export default function Home() {
   return (
     <section className="bg-white">
       <Banner4 />
       <Section1 />
-      {/* <Section2 /> */}
+      <Section2 />
       {/* <Section3 /> */}
       <Section4 />
       <Section5 />

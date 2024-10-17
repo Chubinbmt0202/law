@@ -17,14 +17,16 @@ const Section6 = () => {
                         <span className="text-red-500 font-bold md:text-4xl text-2xl ml-3">1.200.000 ₫</span>
                     </div>
                     <div className="text-center rounded-lg mb-4">
-                        <p className="text-blue-700 font-semibold">Giảm ngay 25%</p>
+                        <p className="text-blue-700 font-semibold">
+                            Giảm ngay <span className="text-red-500 text-2xl">25%</span>
+                        </p>
                     </div>
                     <div className="mb-4">
                         <p className="font-bold text-xl text-blue-900 mb-4">CAM KẾT</p>
                         <p>✔️ Không phát sinh thêm bất kỳ chi phí nào</p>
                     </div>
                     <div className="mb-4">
-                        <p>✔️ Hồ sơ đơn giản : Chỉ cần DUY NHẤT 1 bản sao CMND hoặc Hộ chiếu của mỗi thành viên/ cổ đông sáng lập, tất cả các hồ sơ cần thiết khác chúng tôi sẽ chuẩn bị cho quý khách.</p>
+                        <p>✔️ Hồ sơ đơn giản : Chỉ cần <span className="text-red-500 font-bold">DUY NHẤT 1</span > bản sao <span className="text-red-500 font-bold">CMND</span>  hoặc <span className="text-red-500 font-bold"> Hộ chiếu </span>của mỗi thành viên/ cổ đông sáng lập, tất cả các hồ sơ cần thiết khác chúng tôi sẽ chuẩn bị cho quý khách.</p>
                     </div>
                 </div>
 

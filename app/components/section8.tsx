@@ -10,25 +10,25 @@ const Section8 = () => {
 
             <div className="flex md:flex-row mx-5 mt-5 flex-col justify-center items-center">
 
-                <div className="bg-white p-6 md:w-1/3 rounded-lg ">
+                <div className=" p-6 md:w-1/3 rounded-lg ">
                     <div className="mb-4">
-                        <p>Đến với Luật Thiện Minh, người có nhu cầu đăng ký kinh doanh được tư vấn các thủ tục chi tiết, rõ ràng, không phải đi lại nhiều lần, tối ưu chi phí nhất có thể</p>
+                        <p>Đến với <span className="text-blue-600 font-bold">Luật Thiện Minh</span>, người có nhu cầu đăng ký kinh doanh được tư vấn các thủ tục chi tiết, rõ ràng, không phải đi lại nhiều lần, <span className="text-blue-600 font-bold">TỐI ƯU</span> chi phí nhất có thể</p>
                     </div>
                     <div className="mb-4">
-                        <p>Công ty sở hữu 1 đội ngũ chuyên gia với hơn 40+ nhân sự có chuyên môn, đào tạo bài bản và kinh nghiệm thực chiến trên 11 năm</p>
+                        <p>Công ty sở hữu 1 đội ngũ chuyên gia với hơn <span className="text-red-600 font-bold"> 40+ </span>nhân sự có chuyên môn, đào tạo bài bản và kinh nghiệm thực chiến trên <span className="text-red-600 font-bold">  11 năm </span></p>
                     </div>
 
                     <div className="mb-4">
-                        <p>Luật Thiện Minh đã và đang thực hiện dịch vụ và đang đem đến sự hài lòng với hơn 6000+ doanh nghiệp thuộc nhiều lĩnh vực ngành nghề khác nhau</p>
+                        <p>Luật Thiện Minh đã và đang thực hiện dịch vụ và đang đem đến sự hài lòng với hơn<span className="text-red-600 font-bold"> 6000+ </span>  doanh nghiệp thuộc nhiều lĩnh vực ngành nghề khác nhau</p>
                     </div>
                 </div>
 
-                <div className="bg-white p-6 md:w-1/3 rounded-lg ">
+                <div className=" p-6 md:w-1/3 rounded-lg ">
                     <div className="flex mt-2 pr-3">
                         <Image
                             width={600}
                             height={300}
-                            src="/images/24.jpg"
+                            src="/images/26.jpg"
                             alt="Background"
                             className="ml-4"
                         />
