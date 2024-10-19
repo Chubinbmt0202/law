@@ -52,10 +52,10 @@ const Section = () => {
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center">
                     <div className="md:w-1/2 mb-8 sm:mt-8 lg:mt-4 md:mt-t8 mt-[-100px] md:mb-0">
-                        <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ LUẬT THIỆN MINH</h3>
-                        <h2 className="text-3xl font-bold mb-4">Công ty luật THIỆN MINH cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
+                        <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ Thành lập doannh nghiệp</h3>
+                        <h2 className="text-3xl font-bold mb-4">Thành lập doannh nghiệp cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
                         <p className="text-gray-600 mb-6">
-                            Công ty luật Thiện Minh có trụ sở chính tại Thành phố Đà Nẵng. Kinh nghiệm của
+                            Thành lập doannh nghiệp có trụ sở chính tại Thành phố Đà Nẵng. Kinh nghiệm của
                             chúng tôi, sự hiểu biết sâu sắc về luật pháp và văn hóa Việt Nam cùng các luật sư có
                             trình độ chuyên môn cao của chúng tôi mang đến cho khách hàng sự tự tin trong mọi
                             vấn đề pháp lý mà họ gặp phải. Bằng cách tương tác sâu sắc với khách hàng mỗi ngày
@@ -80,7 +80,7 @@ const Section = () => {
                 </div>
             </div>
             {/* .................. */}
-            <h2 className="text-center text-4xl font-bold mt-10 mb-6">Chi phí trọn gói dịch vụ thành lập công ty của Luật Thiện Minh</h2>
+            <h2 className="text-center text-4xl font-bold mt-10 mb-6">Chi phí trọn gói dịch vụ thành lập công ty của Thành lập doannh nghiệp</h2>
             <div className=" py-6">
                 <div className="md:max-w-7xl max-w-full mx-auto py-6">
                     <table className="min-w-full table-auto text-xs sm:text-sm md:text-xs lg:text-xs">
@@ -130,7 +130,7 @@ const Section = () => {
                                 <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                             </tr>
                             <tr>
-                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Đăng ký với cơ quan quản lý thuế (Luật Thiện Minh sẽ hỗ trợ khai báo với cơ quan thuế)</td>
+                                <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Đăng ký với cơ quan quản lý thuế (Thành lập doannh nghiệp sẽ hỗ trợ khai báo với cơ quan thuế)</td>
                                 <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">Kh&#244;ng</td>
                                 <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>
                                 <td className="border border-gray-300 p-1 md:p-4 text-[10px] md:text-xl">✔</td>

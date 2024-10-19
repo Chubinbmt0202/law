@@ -5,7 +5,7 @@ const Banner4 = () => {
     return (
         <div className=" w-full flex  items-center justify-center mt-20">
             {/* Hình ảnh nền */}
-            <div className="w-full h-full inset-0 bg-black bg-opacity-3" style={{ backgroundImage: "url('/images/1.jpg')" }}>
+            <div className="w-full h-full inset-0 bg-black bg-opacity-3 bg-cover" style={{ backgroundImage: "url('/images/1.jpg')" }}>
                 <div className="">
                     <div className="max-w-7xl mx-auto relative flex"> {/* Thay đổi ở đây để sử dụng flexbox */}
                         <div className="w-1/2 hidden md:block mt-10"> {/* Cột bên trái */}

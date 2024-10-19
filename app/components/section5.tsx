@@ -6,7 +6,7 @@ const Section5 = () => {
         <div className=" w-full bg-back bg-cover" style={{ backgroundImage: "url('/images/9.jpg')" }}>
             <div className="flex justify-center items-center md:h-screen">
                 <div className="flex md:space-x-8 mx-5 mt-5">
-                    <div className="border-4 md:w-2/3 flex-col md:flex-row mx-auto border-yellow-500 md:p-4 flex bg-white shadow-lg">
+                    <div className="border-4 md:w-2/3 mb-5 flex-col md:flex-row mx-auto border-yellow-500 md:p-4 flex bg-white shadow-lg">
                         <div className="p-4">
                             <h2 className="text-3xl  font-bold">CÓ PHẢI BẠN ĐANG GẶP KHÓ KHĂN KHI </h2>
                             <h3 className="text-xl font-bold text-blue-600">ĐĂNG KÝ KINH DOANH TẠI ĐÀ NẴNG?</h3>

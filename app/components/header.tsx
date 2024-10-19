@@ -10,7 +10,7 @@ const Header = () => {
         'Giới Thiệu': {
             path: '/about',
             subItems: [
-                { name: 'Công ty Luật Thiện Minh', path: '/about' },
+                { name: 'Thành lập doannh nghiệp', path: '/about' },
                 { name: 'Nhân sự', path: '/employee' },
             ]
         },
@@ -50,7 +50,7 @@ const Header = () => {
         <header className="bg-white shadow w-full fixed top-0 left-0 right-0 z-50">
             <div className="max-w-7xl mx-auto p-4 flex items-center justify-between">
                 <div className="text-2xl font-bold text-blue-800">
-                    <h3>Luật Thiện Minh</h3>
+                    <h3>Thành lập doannh nghiệp</h3>
                 </div>
 
                 {/* Hamburger button for mobile */}

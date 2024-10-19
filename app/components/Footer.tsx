@@ -29,7 +29,7 @@ const Footer = () => {
 
                             <div className="flex flex-col mt-10">
                                 <h1 className="text-xl font-bold text-white text-yellow-200">Địa chỉ Đà Nẵng:</h1>
-                                <p className="text-center">10 Thuận An 4, Phường Chính Gián, Quận Thanh Khê, TP Đà Nẵng.</p>
+                                <p className="text-center">64 Lê Đại Hành, Khuê Trung, Cẩm Lệ, TP Đà Nẵng.</p>
 
                                 <h3 className="text-xl font-bold mb-4 mt-4 text-yellow-200">Dịch vụ chính của Chúng tôi:</h3>
                                 <ul className="space-y-2">

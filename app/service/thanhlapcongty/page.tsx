@@ -41,7 +41,7 @@ export default function Thanhlapcongty() {
 
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
                 <h1 className="text-3xl font-bold text-red-600 mb-6">
-                    1. Bảng giá dịch vụ thành lập công ty trọn gói tại Công ty Luật Thiện Minh
+                    1. Bảng giá dịch vụ thành lập công ty trọn gói tại Thành lập doannh nghiệp
                 </h1>
 
                 <p className="mb-6">

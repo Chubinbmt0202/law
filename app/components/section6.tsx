@@ -11,10 +11,10 @@ const Section6 = () => {
             <div className="flex justify-center flex-col md:flex-row">
 
                 <div className="bg-white p-6 md:w-1/3 mx-5 mt-5 rounded-lg ">
-                    <h2 className="text-xl font-bold mb-4">Giải pháp hoàn hảo dành cho bạn</h2>
+                    <h2 className="text-xl font-bold mb-4">GIẢI PHÁP HOÀN HẢO DÀNH CHO BẠN</h2>
                     <div className="flex items-center border-4 mb-4">
-                        <span className="text-white font-bold text-xl line-through bg-blue-900 md:px-12 p-5">1.600.000 ₫</span>
-                        <span className="text-red-500 font-bold md:text-4xl text-2xl ml-3">1.200.000 ₫</span>
+                        <span className="text-white w-1/2 font-bold items-center md:text-2xl line-through bg-blue-900 md:px-12 p-5 md:pl-10">1.600.000 ₫</span>
+                        <span className="text-red-500 md:w-1/2 font-bold md:text-4xl text-xl ml-6 md:ml-10">1.200.000 ₫</span>
                     </div>
                     <div className="text-center rounded-lg mb-4">
                         <p className="text-blue-700 font-semibold">

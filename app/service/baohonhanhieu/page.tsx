@@ -57,10 +57,10 @@ export default function Batdongsan() {
             <div className="max-w-7xl mx-auto px-4 mt-20 sm:px-6 lg:px-8">
                 <div className="flex flex-col md:flex-row items-center justify-center">
                     <div className="md:w-1/2 mb-8 md:mb-0">
-                        <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ LUẬT THIỆN MINH</h3>
-                        <h2 className="text-3xl font-bold mb-4">Công ty luật THIỆN MINH cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
+                        <h3 className="text-red-600 text-sm font-semibold uppercase mb-2">VỀ Thành lập doannh nghiệp</h3>
+                        <h2 className="text-3xl font-bold mb-4">Thành lập doannh nghiệp cung cấp tư vấn pháp lý toàn diện cho các vấn đề trong và ngoài nước</h2>
                         <p className="text-gray-600 mb-6">
-                            Công ty luật Thiện Minh có trụ sở chính tại Thành phố Đà Nẵng. Kinh nghiệm của
+                            Thành lập doannh nghiệp có trụ sở chính tại Thành phố Đà Nẵng. Kinh nghiệm của
                             chúng tôi, sự hiểu biết sâu sắc về luật pháp và văn hóa Việt Nam cùng các luật sư có
                             trình độ chuyên môn cao của chúng tôi mang đến cho khách hàng sự tự tin trong mọi
                             vấn đề pháp lý mà họ gặp phải. Bằng cách tương tác sâu sắc với khách hàng mỗi ngày

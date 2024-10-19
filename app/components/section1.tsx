@@ -11,7 +11,7 @@ const Section1 = () => {
                     <h1 className="text-xl md:text-2xl font-bold text-stone-900">ĐẾN NĂM 2024</h1>
                     {/* Statistics Boxes */}
                     <div className="flex w-full justify-center md:flex-row items-center flex-col mt-8">
-                        <div className="bg-white md:w-1/5 w-4/5 mx-8 border-8 border-yellow-500 p-6 shadow-lg">
+                        <div className="bg-white md:w-1/5 w-4/5 mt-5 mx-8 border-8 border-yellow-500 p-6 shadow-lg">
                             <h3 className="text-4xl font-bold text-blue-800">11+ Năm</h3>
                             <p className="text-black">Hơn 11 năm kinh nghiệm tư vấn lập công ty Đà Nẵng</p>
                         </div>

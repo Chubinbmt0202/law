@@ -75,7 +75,7 @@ const Section11 = () => {
         return () => clearInterval(interval);
     }, []);
     return (
-        <div className="py-10 h-full bg-black bg-cover" style={{ backgroundImage: "url('/images/1.jpg')" }}>
+        <div className="py-10 h-full bg-black bg-cover" id="1" style={{ backgroundImage: "url('/images/1.jpg')" }}>
             <div className="flex max-w-5xl flex-col items-center md:flex-row mx-auto justify-between p-8 rounded-lg text-white">
                 <div className="max-w-md">
                     <Image

@@ -4,8 +4,8 @@ import Image from "next/image";
 const Section4 = () => {
     return (
         <div className="py-10 w-full h-full bg-black bg-cover" style={{ backgroundImage: "url('/images/8.jpg')" }}>
-            <h1 className="text-3xl font-bold text-center">CHIA SẺ CỦA KHÁCH HÀNG VỀ</h1>
-            <h2 className="text-2xl font-bold text-center text-yellow-800">DỊCH VỤ ĐĂNG KÝ THÀNH LẬP CÔNG TY của LUẬT THIỆN MINH</h2>
+            <h1 className="text-2xl md:text-3xl font-bold text-center">CHIA SẺ CỦA KHÁCH HÀNG VỀ</h1>
+            <h2 className="text-xl md:text-2xl font-bold text-center text-yellow-800">DỊCH VỤ ĐĂNG KÝ THÀNH LẬP CÔNG TY của Thành lập doannh nghiệp</h2>
 
             <div className="max-w-7xl mx-auto flex-col md:flex-row flex justify-around mt-5">
                 {/* Testimonial 1 */}
