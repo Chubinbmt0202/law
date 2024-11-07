@@ -7,22 +7,27 @@ import Image from "next/image";
 const Header = () => {
     const menuItems = {
         'Trang Chủ': { path: '/', subItems: [] },
-        'Giới Thiệu': {
-            path: '/about',
-            subItems: [
-                { name: 'Thành lập doannh nghiệp', path: '/about' },
-                { name: 'Nhân sự', path: '/employee' },
-            ]
-        },
+        'Giới Thiệu': { path: '/about', subItems: [] },
         'Dịch Vụ': {
             path: '/service',
             subItems: [
-                { name: 'Thành lập Doanh nghiệp trọn gói', path: '/service/dichvuthanhlapdoanhnghiep' },
-                { name: 'Kế toán Doanh nghiệp', path: '/service/ketoanphapluat' },
-                { name: 'Đăng ký Bảo Hộ Nhãn Hiệu', path: '/service/baohonhanhieu' },
+                { name: 'Giấy chứng nhận đăng ký kinh doanh', path: '/service/dichvuthanhlapdoanhnghiep' },
+                { name: 'Giấy phép con', path: '/service/ketoanphapluat' },
+                { name: 'Giấy phép lao động', path: '/service/baohonhanhieu' },
+                { name: 'Giấy chứng nhận đủ điều kiện vệ sinh ATTP', path: '/service/attp' },
+                { name: 'Giấy phép môi trường', path: '/service/ketoanphapluat' },
+                { name: 'Giấy phép đăng ký nhãn hiệu, bản quyền sở hữu trí tuệ', path: '/service/baohonhanhieu' },
+                { name: 'Giấy phép kinh doanh hoá chất', path: '/service/dichvuthanhlapdoanhnghiep' },
+                { name: 'Giấy chứng nhận xuất xứ hàng hoá (C/O)', path: '/service/ketoanphapluat' },
+                { name: 'Giất chứng nhận an ninh, trật tự', path: '/service/baohonhanhieu' },
+                { name: 'Giấy phép quảng cáo', path: '/service/dichvuthanhlapdoanhnghiep' },
+                { name: 'Giấy công bố sản phẩm', path: '/service/ketoanphapluat' },
+                { name: 'Giấy công bố mỹ phẩm', path: '/service/baohonhanhieu' },
+                { name: 'Giấy kiểm định', path: '/service/baohonhanhieu' },
+                { name: 'Giấy phép xuất khẩu', path: '/service/baohonhanhieu' },
+
             ]
         },
-        'Tin Tức Pháp Luật': { path: '/service/landingpage', subItems: [] },
         'Liên Hệ': { path: '/contacts', subItems: [] }
     };
 
@@ -77,7 +82,7 @@ const Header = () => {
                                 )}
                             </Link>
                             {subItems.length > 0 && openMenu === key && (
-                                <div className="absolute left-0 w-[200px] bg-white shadow-lg rounded-lg border border-gray-200">
+                                <div className="absolute right-0 w-[300px] bg-white shadow-lg rounded-lg border border-gray-200">
                                     {subItems.map(({ name, path }) => (
                                         <Link
                                             key={name}

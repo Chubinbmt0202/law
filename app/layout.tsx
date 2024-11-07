@@ -18,7 +18,7 @@ const geistMono = localFont({
 
 export const metadata: Metadata = {
   icons: {
-    icon: '/images/25.jpg'
+    icon: '/images/logo-1.jpg'
   },
   title: "Thành lập doanh nghiệp",
   description: "Thành lập doanh nghiệp",

@@ -20,12 +20,12 @@ const Banner = () => {
                 <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col md:text-center justify-center md:items-start sm:flex">
                     {/* Tiêu đề lớn */}
                     <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 text-center">
-                        DỊCH VỤ THÀNH LẬP CÔNG TY
+                        DỊCH VỤ ĐĂNG KÝ LÀM GIẤY PHÉP KINH DOANH
                     </h2>
 
                     {/* Giá */}
                     <h1 className="text-yellow-200 text-5xl md:text-8xl font-bold mb-6 text-center">
-                        690.000 VNĐ
+                        250.000 VNĐ
                     </h1>
 
                     {/* Nội dung mô tả */}
@@ -33,9 +33,9 @@ const Banner = () => {
                         Chi phí trọn gói A-Z và 3 ngày làm việc
                     </p>
 
-                    <p className="text-white mb-6 text-center">
+                    {/* <p className="text-white mb-6 text-center">
                         Dịch vụ thành lập doanh nghiệp - Chọn Thành lập doannh nghiệp, vững bước khởi nghiệp thành công!
-                    </p>
+                    </p> */}
 
                     {/* Nút CTA */}
                     <div className="flex justify-center md:justify-start w-full">
