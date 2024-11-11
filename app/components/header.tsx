@@ -15,16 +15,16 @@ const Header = () => {
                 { name: 'Giấy phép con', path: '/service/ketoanphapluat' },
                 { name: 'Giấy phép lao động', path: '/service/baohonhanhieu' },
                 { name: 'Giấy chứng nhận đủ điều kiện vệ sinh ATTP', path: '/service/attp' },
-                { name: 'Giấy phép môi trường', path: '/service/ketoanphapluat' },
-                { name: 'Giấy phép đăng ký nhãn hiệu, bản quyền sở hữu trí tuệ', path: '/service/baohonhanhieu' },
-                { name: 'Giấy phép kinh doanh hoá chất', path: '/service/dichvuthanhlapdoanhnghiep' },
-                { name: 'Giấy chứng nhận xuất xứ hàng hoá (C/O)', path: '/service/ketoanphapluat' },
-                { name: 'Giất chứng nhận an ninh, trật tự', path: '/service/baohonhanhieu' },
-                { name: 'Giấy phép quảng cáo', path: '/service/dichvuthanhlapdoanhnghiep' },
-                { name: 'Giấy công bố sản phẩm', path: '/service/ketoanphapluat' },
-                { name: 'Giấy công bố mỹ phẩm', path: '/service/baohonhanhieu' },
-                { name: 'Giấy kiểm định', path: '/service/baohonhanhieu' },
-                { name: 'Giấy phép xuất khẩu', path: '/service/baohonhanhieu' },
+                { name: 'Giấy phép môi trường', path: '/service/giayphepmoitruong' },
+                { name: 'Giấy phép đăng ký nhãn hiệu, bản quyền sở hữu trí tuệ', path: '/service/banquyenthuonghieu' },
+                { name: 'Giấy phép kinh doanh hoá chất', path: '/service/hoachat' },
+                { name: 'Giấy chứng nhận xuất xứ hàng hoá (C/O)', path: '/service/xuatxuhanghoa' },
+                { name: 'Giất chứng nhận an ninh, trật tự', path: '/service/anninhtrattu' },
+                { name: 'Giấy phép quảng cáo', path: '/service/quangcao' },
+                { name: 'Giấy công bố sản phẩm', path: '/service/congbosanpham' },
+                { name: 'Giấy công bố mỹ phẩm', path: '/service/giayphepmypham' },
+                { name: 'Giấy kiểm định', path: '/service/giaykiemdinh' },
+                { name: 'Giấy phép xuất khẩu', path: '/service/giayxuatkhau' },
 
             ]
         },
@@ -55,7 +55,7 @@ const Header = () => {
         <header className="bg-white shadow w-full fixed top-0 left-0 right-0 z-50">
             <div className="max-w-7xl mx-auto p-4 flex items-center justify-between">
                 <div className="text-2xl font-bold text-blue-800">
-                    <h3>Thành lập doannh nghiệp</h3>
+                    <h3>THÀNH LẬP DOANH NGHIỆP</h3>
                 </div>
 
                 {/* Hamburger button for mobile */}

@@ -19,7 +19,7 @@ const Section8 = () => {
                     </div>
 
                     <div className="mb-4">
-                        <p>Thành lập doannh nghiệp đã và đang thực hiện dịch vụ và đang đem đến sự hài lòng với hơn<span className="text-red-600 font-bold"> 6000+ </span>  doanh nghiệp thuộc nhiều lĩnh vực ngành nghề khác nhau</p>
+                        <p>Thành lập doanh nghiệp đã và đang thực hiện dịch vụ và đang đem đến sự hài lòng với hơn<span className="text-red-600 font-bold"> 6000+ </span>  doanh nghiệp thuộc nhiều lĩnh vực ngành nghề khác nhau</p>
                     </div>
                 </div>
 

@@ -34,7 +34,7 @@ const Banner = () => {
                     </p>
 
                     {/* <p className="text-white mb-6 text-center">
-                        Dịch vụ thành lập doanh nghiệp - Chọn Thành lập doannh nghiệp, vững bước khởi nghiệp thành công!
+                        Dịch vụ thành lập doanh nghiệp - Chọn Thành lập doanh nghiệp, vững bước khởi nghiệp thành công!
                     </p> */}
 
                     {/* Nút CTA */}
