@@ -18,7 +18,7 @@ const Banner3 = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50">
                 <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col md:text-center justify-center md:items-start sm:flex">
 
-                    <h1 className="text-yellow-200 text-5xl md:text-6xl text-left font-bold mb-6">Giấy chứng nhận đủ điều kiện về vệ sinh an toàn thực phẩm</h1>
+                    <h1 className="text-yellow-200 text-5xl md:text-6xl text-left font-bold mb-6">Giấy phép kinh doanh hoá chất</h1>
                     <Link href="/contact" className="bg-red-600 text-center text-white px-6 py-3 rounded-md hover:bg-red-700 transition duration-300">
                         NHẬN TƯ VẤN
                     </Link>

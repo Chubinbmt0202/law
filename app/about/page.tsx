@@ -21,11 +21,10 @@ export default function AboutPage() {
                     </ul>
                     <div className='mt-6'>
                         <Image
-                            width={1920}
-                            height={1920}
-                            src={"/images/nganh-luat-3.jpeg"}
-                            alt='sdasd'
-                            className="w-full h-auto" // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
+                            width={720}
+                            height={400}
+                            src={"/images/23.jpg"}
+                            alt='sdasd' // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
                         />
                     </div>
                     <p className=' py-6'>Công ty Luật và Kế toán Thiện Minh bắt đầu hoạt động từ năm 2016. Đến hiện tại với hơn 8+ năm phát triển, Thiện Minh dần khẳng định vị thế là một trong những công ty dẫn đầu trong lĩnh vực cung cấp dịch vụ tư vấn Pháp Lý Doanh Nghiệp tại Việt Nam. Thiện Minh hoạt động hướng đến mục tiêu bảo vệ quyền và lợi ích của khách hàng, cam kết mang đến dịch vụ chuyên nghiệp, đáng tin cậy cho các quý doanh nghiệp.
@@ -33,15 +32,6 @@ export default function AboutPage() {
                         Khi hợp tác với Thành lập doanh nghiệp, quý doanh nghiệp sẽ được tư vấn pháp lý và chiến lược kinh doanh, đảm bảo lợi ích cao nhất. Phương châm hoạt động của chúng tôi là “Phòng ngừa rủi ro, phát triển bền vững”. Luật và Kế toán Thiện Minh sẽ là địa chỉ hàng đầu cho các quý doanh nghiệp với mọi vấn đề về pháp lý.</p>
 
                     <h2 className="text-2xl font-bold">2. Sứ mệnh, tầm nhìn, giá trị cốt lõi</h2>
-                    <div className='mt-6'>
-                        <Image
-                            width={1920}
-                            height={1920}
-                            src={"/images/nganh-luat-3.jpeg"}
-                            alt='sdasd'
-                            className="w-full h-auto" // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
-                        />
-                    </div>
                     <p className='mt-6'>Luật và Kế toán Thiện Minh hướng tới mục tiêu chung “Lợi ích của Doanh Nghiệp là ưu tiên hàng đầu của chúng tôi”.</p>
                     <h1 className='text-xl text-red-500'>Sứ mệnh</h1>
                     <h3>Thành lập doanh nghiệp phấn đấu trở thành cộng sự đồng hành trên sự thành công của doanh nghiệp. Sự tin tưởng của khách hàng chính là nền tảng giúp chúng tôi phát triển trong tương lai. Sứ mệnh của chúng tôi là:</h3>
@@ -68,11 +58,10 @@ export default function AboutPage() {
                     <h2 className="text-2xl font-bold">3. Dịch vụ pháp lý tại Thành lập doanh nghiệp</h2>
                     <div className='mt-6'>
                         <Image
-                            width={1920}
-                            height={1920}
-                            src={"/images/nganh-luat-3.jpeg"}
-                            alt='sdasd'
-                            className="w-full h-auto" // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
+                            width={720}
+                            height={400}
+                            src={"/images/26.jpg"}
+                            alt='sdasd' // Đảm bảo hình ảnh chiếm toàn bộ chiều rộng
                         />
                     </div>
                     <h1 className=' mt-6 text-xl text-red-500'>Dịch vụ thành lập Doanh nghiệp</h1>

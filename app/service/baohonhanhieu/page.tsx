@@ -1,14 +1,14 @@
 
 import React from 'react';
 import Image from 'next/image';
-import Banner3 from '@/app/components/banner3';
+import Banner15 from '@/app/components/banner15';
 import Section11 from '@/app/components/section11';
 
 export default function Batdongsan() {
 
     return (
         <section className="py-16 bg-white md:mt-1">
-            <Banner3 />
+            <Banner15 />
             <section className="py-8 bg-white mt-8 md:mt-1">
                 <div className="relative max-w-7xl mx-auto isolate overflow-hidden bg-white py-6 sm:py-6 lg:overflow-visible lg:px-0">
                     <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -142,14 +142,6 @@ export default function Batdongsan() {
                     </div>
 
                 </div>
-
-
-                {/* ////////// */}
-
-                {/* /////////////// */}
-
-
-                <Section11 />
             </section>
 
 

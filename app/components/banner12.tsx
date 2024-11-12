@@ -22,7 +22,7 @@ const Banner2 = () => {
 
                     {/* Giá */}
                     <h1 className="text-yellow-200 text-3xl md:text-6xl font-bold mb-6 md:text-left">
-                        Giấy chứng nhận an ninh, trật tự
+                        Giấy phép con
                     </h1>
 
                     {/* <p className="text-white mb-6 text-center">

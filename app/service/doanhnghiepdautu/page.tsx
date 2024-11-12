@@ -2,8 +2,6 @@ import Contact from '@/app/components/contact';
 import React from 'react';
 
 export default function Doanhnghiepdautu() {
-
-
     return (
         <div className="relative w-full">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-10 text-center">

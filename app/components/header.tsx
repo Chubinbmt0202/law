@@ -25,7 +25,6 @@ const Header = () => {
                 { name: 'Giấy công bố mỹ phẩm', path: '/service/giayphepmypham' },
                 { name: 'Giấy kiểm định', path: '/service/giaykiemdinh' },
                 { name: 'Giấy phép xuất khẩu', path: '/service/giayxuatkhau' },
-
             ]
         },
         'Liên Hệ': { path: '/contacts', subItems: [] }
@@ -88,6 +87,7 @@ const Header = () => {
                                             key={name}
                                             href={path}
                                             className="block px-4 py-2 text-blue-800 hover:bg-[#f0f0f0] hover:text-[#c41230] transition duration-300 ease-in-out"
+                                            onClick={() => console.log("Title", name)}
                                         >
                                             {name}
                                         </Link>

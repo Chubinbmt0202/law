@@ -1,75 +1,96 @@
 import Link from "next/link";
-
+import Section11 from "../components/section11";
 
 export default function Service() {
     const services = [
         {
             icon: '/icons/giai-quyet-tranh-chap.svg',
-            path: '/thanhlapcongty',
-            title: 'Thành lập công ty',
-            description: 'Cung cấp dịch vụ tư vấn và hỗ trợ giải quyết tranh chấp thương mại, dân sự, và hợp đồng một cách hiệu quả.'
+            path: '/service/dichvuthanhlapdoanhnghiep',
+            title: 'Giấy chứng nhận đăng ký kinh doanh',
+            description: 'Hỗ trợ doanh nghiệp trong việc đăng ký kinh doanh, đảm bảo tuân thủ các quy định pháp luật và tạo điều kiện thuận lợi cho hoạt động kinh doanh.'
         },
         {
             icon: '/icons/bat-dong-san.svg',
-            title: 'Bất Động Sản',
-            path: '/batdongsan',
-            description: 'Hỗ trợ pháp lý và tư vấn về giao dịch, hợp đồng, và tranh chấp liên quan đến bất động sản.'
+            path: '/service/ketoanphapluat',
+            title: 'Giấy phép con',
+            description: 'Cung cấp dịch vụ tư vấn và hỗ trợ để xin các giấy phép con cần thiết cho hoạt động kinh doanh, giúp doanh nghiệp hoạt động hợp pháp và hiệu quả.'
         },
         {
             icon: '/icons/doanh-nghiep-va-dau-tu.svg',
-            title: 'Doanh Nghiệp Và Đầu Tư',
-            path: '/doanhnghiepdautu',
-            description: 'Tư vấn pháp lý toàn diện cho các doanh nghiệp và nhà đầu tư trong các hoạt động kinh doanh và đầu tư.'
+            path: '/service/baohonhanhieu',
+            title: 'Giấy phép lao động',
+            description: 'Tư vấn và hỗ trợ xin giấy phép lao động cho người nước ngoài, đảm bảo tuân thủ các quy định về lao động và nhập cư.'
         },
         {
             icon: '/icons/lao-dong.svg',
-            title: 'Lao Động',
-            path: '/doanhnghiepdautu',
-            description: 'Cung cấp giải pháp pháp lý liên quan đến lao động, hợp đồng lao động, và tranh chấp lao động.'
+            path: '/service/attp',
+            title: 'Giấy chứng nhận đủ điều kiện vệ sinh ATTP',
+            description: 'Đánh giá và cấp giấy chứng nhận vệ sinh an toàn thực phẩm cho các cơ sở sản xuất và kinh doanh thực phẩm, đảm bảo sức khỏe cộng đồng.'
         },
         {
             icon: '/icons/so-huu-tri-tue.svg',
-            title: 'Sở Hữu Trí Tuệ',
-            description: 'Dịch vụ bảo vệ quyền sở hữu trí tuệ, bao gồm bản quyền, thương hiệu, và sáng chế.'
+            path: '/service/giayphepmoitruong',
+            title: 'Giấy phép môi trường',
+            description: 'Tư vấn và hỗ trợ doanh nghiệp trong việc xin giấy phép môi trường, đảm bảo hoạt động sản xuất không gây hại cho môi trường.'
         },
         {
             icon: '/icons/thuong-mai-trong-va-ngoai-nuoc.svg',
-            title: 'Thương Mại Trong Và Ngoài Nước',
-            description: 'Tư vấn và hỗ trợ các vấn đề pháp lý trong thương mại nội địa và quốc tế, bao gồm hợp đồng và xuất nhập khẩu.'
+            path: '/service/banquyenthuonghieu',
+            title: 'Giấy phép đăng ký nhãn hiệu, bản quyền sở hữu trí tuệ',
+            description: 'Hỗ trợ doanh nghiệp trong việc đăng ký nhãn hiệu và bảo vệ quyền sở hữu trí tuệ, giúp bảo vệ thương hiệu và sản phẩm của họ.'
         },
         {
             icon: '/icons/ipo-huy-dong-von.svg',
-            title: 'IPO & Huy Động Vốn',
-            description: 'Hỗ trợ doanh nghiệp trong quá trình IPO và huy động vốn từ các nguồn đầu tư trong và ngoài nước.'
+            path: '/service/hoachat',
+            title: 'Giấy phép kinh doanh hoá chất',
+            description: 'Tư vấn và hỗ trợ xin giấy phép kinh doanh hóa chất, đảm bảo tuân thủ các quy định an toàn và bảo vệ môi trường.'
         },
         {
             icon: '/icons/thu-hoi-no.svg',
-            title: 'Thu Hồi Nợ',
-            description: 'Dịch vụ tư vấn và hỗ trợ thu hồi nợ, đảm bảo quyền lợi của doanh nghiệp và cá nhân trong các tranh chấp về nợ.'
+            path: '/service/xuatxuhanghoa',
+            title: 'Giấy chứng nhận xuất xứ hàng hoá (C/O)',
+            description: 'Cung cấp dịch vụ xin giấy chứng nhận xuất xứ hàng hóa, hỗ trợ doanh nghiệp trong việc xuất khẩu và thương mại quốc tế.'
         },
         {
             icon: '/icons/xay-dung-va-co-so-ha-tang.svg',
-            title: 'Xây Dựng Và Cơ Sở Hạ Tầng',
-            description: 'Tư vấn pháp lý và hỗ trợ trong các dự án xây dựng và cơ sở hạ tầng, bao gồm hợp đồng và giấy phép.'
+            path: '/service/anninhtrattu',
+            title: 'Giất chứng nhận an ninh, trật tự',
+            description: 'Hỗ trợ doanh nghiệp trong việc xin giấy chứng nhận an ninh trật tự, đảm bảo hoạt động kinh doanh diễn ra an toàn và hợp pháp.'
         },
         {
             icon: '/icons/tu-van-ma.svg',
-            title: 'Tư Vấn M&A',
-            description: 'Tư vấn và hỗ trợ pháp lý trong các giao dịch mua bán và sáp nhập doanh nghiệp (M&A).'
+            path: '/service/quangcao',
+            title: 'Giấy phép quảng cáo',
+            description: 'Tư vấn và hỗ trợ doanh nghiệp trong việc xin giấy phép quảng cáo, đảm bảo các hoạt động quảng cáo tuân thủ quy định pháp luật.'
         },
         {
             icon: '/icons/tai-chinh.svg',
-            title: 'Tài Chính',
-            description: 'Cung cấp dịch vụ tư vấn tài chính, đầu tư và hỗ trợ pháp lý liên quan đến các giao dịch tài chính.'
+            path: '/service/congbosanpham',
+            title: 'Giấy công bố sản phẩm',
+            description: 'Cung cấp dịch vụ công bố sản phẩm, giúp doanh nghiệp đảm bảo sản phẩm của mình đáp ứng các tiêu chuẩn chất lượng và an toàn.'
         },
         {
             icon: '/icons/tu-van-nhuong-quyen-thuong-mai.svg',
-            title: 'Tư Vấn Nhượng Quyền Thương Mại',
-            description: 'Tư vấn pháp lý cho các bên nhượng quyền và nhận quyền trong hoạt động thương mại.'
+            path: '/service/giayphepmypham',
+            title: 'Giấy công bố mỹ phẩm',
+            description: 'Hỗ trợ doanh nghiệp trong việc công bố mỹ phẩm, đảm bảo sản phẩm đáp ứng các tiêu chuẩn an toàn và chất lượng.'
+        },
+        {
+            icon: '/icons/tu-van-nhuong-quyen-thuong-mai.svg',
+            path: '/service/giaykiemdinh',
+            title: 'Giấy kiểm định',
+            description: 'Cung cấp dịch vụ kiểm định chất lượng sản phẩm, giúp doanh nghiệp đảm bảo sản phẩm của mình đạt tiêu chuẩn chất lượng.'
+        },
+        {
+            icon: '/icons/tu-van-nhuong-quyen-thuong-mai.svg',
+            path: '/service/giayxuatkhau',
+            title: 'Giấy phép xuất khẩu',
+            description: 'Tư vấn và hỗ trợ doanh nghiệp trong việc xin giấy phép xuất khẩu, đảm bảo tuân thủ các quy định xuất khẩu quốc tế.'
         }
     ];
+
     return (
-        <section className="py-16 bg-gray-100">
+        <section className="py-16 bg-gray-100 mt-10">
             <div className="max-w-7xl mx-auto">
                 <h3 className="text-red-600 text-sm font-semibold uppercase text-center mb-2">DỊCH VỤ TƯ VẤN</h3>
                 <h2 className="text-3xl font-bold text-center mb-12">DỊCH VỤ CHÍNH</h2>
@@ -93,7 +114,7 @@ export default function Service() {
             <div className="max-w-7xl mx-auto mt-10">
                 <section className="mb-8">
                     <p className="mb-4">
-                        Apolat Legal là một công ty luật kinh doanh, có nhiều kinh nghiệm tư vấn cho Nhà Đầu Tư Nước Ngoài đầu tư vào Việt Nam hay hay hỗ trợ cho các Doanh Nghiệp Việt Nam tiếp nhận vốn đầu tư từ Nhà Đầu Tư Nước Ngoài. Đồng thời, chúng tôi cũng hỗ trợ các Doanh Nghiệp Việt Nam đầu tư kinh doanh ra nước ngoài, mở rộng thị trường quốc tế. Khách hàng của chúng tôi bao gồm các công ty hoạt động trong nhiều lĩnh vực kinh doanh như ngân hàng và tài chính, bất động sản, xây dựng, giải trí, bảo hiểm, hàng tiêu dùng, sản xuất… Chúng tôi đã tư vấn và hỗ trợ khách hàng của mình trong từng giai đoạn riêng lẻ của dự án cũng như toàn bộ quá trình đầu tư, xác định cấu trúc quản lý, vốn hóa và xử lý vấn đề kiểm soát quyền đối với hoạt động kinh doanh và quản lý.
+                        Thành lập doanh nghiệp là một công ty luật kinh doanh, có nhiều kinh nghiệm tư vấn cho Nhà Đầu Tư Nước Ngoài đầu tư vào Việt Nam hay hay hỗ trợ cho các Doanh Nghiệp Việt Nam tiếp nhận vốn đầu tư từ Nhà Đầu Tư Nước Ngoài. Đồng thời, chúng tôi cũng hỗ trợ các Doanh Nghiệp Việt Nam đầu tư kinh doanh ra nước ngoài, mở rộng thị trường quốc tế. Khách hàng của chúng tôi bao gồm các công ty hoạt động trong nhiều lĩnh vực kinh doanh như ngân hàng và tài chính, bất động sản, xây dựng, giải trí, bảo hiểm, hàng tiêu dùng, sản xuất… Chúng tôi đã tư vấn và hỗ trợ khách hàng của mình trong từng giai đoạn riêng lẻ của dự án cũng như toàn bộ quá trình đầu tư, xác định cấu trúc quản lý, vốn hóa và xử lý vấn đề kiểm soát quyền đối với hoạt động kinh doanh và quản lý.
                     </p>
                     <p>
                         Các dịch vụ của chúng tôi trong hoạt động Đầu Tư Nước Ngoài Vào Việt Nam bao gồm đầy đủ từ hỗ trợ nghiên cứu thị trường, định lượng lợi ích và rủi ro liên quan đến chính sách đầu tư của chính phủ, xác định cấu trúc pháp lý hiệu quả trong giao dịch của khách hàng, hỗ trợ khách hàng rà soát, đánh giá và thẩm định chi tiết năng lực pháp lý các đối tác, tư vấn tái cấu trúc doanh nghiệp, lấy văn bản chấp thuận/phê chuẩn, giấy phép kinh doanh, giấy chứng nhận đầu tư, giấy chứng nhận đủ điều kiện hoạt động cho các Nhà Đầu Tư ở Việt Nam. Trong một số trường hợp, với khả năng giao tiếp với cộng đồng địa phương và kinh nghiệm chuyên sâu của các luật sư của chúng tôi đã khiến chính quyền địa phương và khách hàng thoải mái hơn trong việc đạt được thỏa thuận, giải quyết bế tắc và góp phần vào sự thành công trong kinh doanh của khách hàng.
@@ -134,79 +155,7 @@ export default function Service() {
                     </ul>
                 </section>
             </div>
-            <section className="py-16 bg-white">
-                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-                    <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                        <div>
-                            <h2 className="text-3xl font-bold text-red-600 mb-6">Thông tin liên hệ</h2>
-                            <div className="space-y-4">
-                                <div className="flex items-center">
-                                    {/* <PhoneIcon className="h-6 w-6 text-red-600 mr-2" /> */}
-                                    <p>Hotline: (+84) 911 357 447</p>
-                                </div>
-                                <div className="flex items-center">
-                                    {/* <EnvelopeIcon className="h-6 w-6 text-red-600 mr-2" /> */}
-                                    <p>Email: info@apolatlegal.com</p>
-                                </div>
-                                <div className="flex items-start">
-                                    {/* <MapPinIcon className="h-6 w-6 text-red-600 mr-2 mt-1" /> */}
-                                    <div>
-                                        <p className="font-semibold">Văn phòng tại Đà Nẵng:</p>
-                                        <p>64 Lê Đại Hành, Khuê Trung, Cẩm lệ, Thành phố Đà Nẵng, Việt Nam</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div>
-                            <h2 className="text-3xl font-bold text-red-600 mb-6">Gửi yêu cầu tư vấn</h2>
-                            <form className="space-y-4">
-                                <div>
-                                    <label htmlFor="name" className="block mb-1">Họ tên *</label>
-                                    <input type="text" id="name" name="name" className="w-full p-2 border rounded" placeholder="Nhập họ tên..." required />
-                                </div>
-                                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                                    <div>
-                                        <label htmlFor="phone" className="block mb-1">Số điện thoại *</label>
-                                        <input type="tel" id="phone" name="phone" className="w-full p-2 border rounded" placeholder="Nhập số điện thoại..." required />
-                                    </div>
-                                    <div>
-                                        <label htmlFor="email" className="block mb-1">Email</label>
-                                        <input type="email" id="email" name="email" className="w-full p-2 border rounded" placeholder="Nhập email..." />
-                                    </div>
-                                </div>
-                                <div>
-                                    <label htmlFor="area" className="block mb-1">Lĩnh vực *</label>
-                                    <select id="area" name="area" className="w-full p-2 border rounded" required>
-                                        <option value="">Tư vấn doanh nghiệp</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="service" className="block mb-1">Dịch vụ cần tư vấn *</label>
-                                    <select id="service" name="service" className="w-full p-2 border rounded" required>
-                                        <option value="">Doanh nghiệp</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="city" className="block mb-1">Tỉnh thành *</label>
-                                    <select id="city" name="city" className="w-full p-2 border rounded" required>
-                                        <option value="">--Please choose an option--</option>
-                                        {/* Thêm các option khác */}
-                                    </select>
-                                </div>
-                                <div>
-                                    <label htmlFor="message" className="block mb-1">Nội dung *</label>
-                                    <textarea id="message" name="message" rows={4} className="w-full p-2 border rounded" placeholder="Nhập nội dung..." required></textarea>
-                                </div>
-                                <button type="submit" className="bg-red-600 text-white px-6 py-2 rounded hover:bg-red-700 transition-colors duration-300">
-                                    Gửi đi
-                                </button>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </section>
+            <Section11 />
         </section>
     )
 }

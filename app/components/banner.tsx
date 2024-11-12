@@ -4,7 +4,7 @@ import Link from "next/link";
 // app/components/Banner.js
 const Banner = () => {
     return (
-        <div className="relative h-[600px] sm:h-[500px] flex items-center justify-center mt-20">
+        <div className="relative h-[600px] sm:h-[500px] flex items-center justify-center">
             {/* Hình ảnh nền */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -19,19 +19,11 @@ const Banner = () => {
             <div className="absolute inset-0 bg-black bg-opacity-50">
                 <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex flex-col md:text-center justify-center md:items-start sm:flex">
                     {/* Tiêu đề lớn */}
-                    <h2 className="text-white text-3xl md:text-5xl font-bold mb-4 text-center">
-                        DỊCH VỤ ĐĂNG KÝ LÀM GIẤY PHÉP KINH DOANH
-                    </h2>
 
                     {/* Giá */}
-                    <h1 className="text-yellow-200 text-5xl md:text-8xl font-bold mb-6 text-center">
-                        250.000 VNĐ
+                    <h1 className="text-yellow-200 text-3xl md:text-6xl font-bold mb-6 md:text-left">
+                        Giấy phép đăng ký nhẵn hiệu, bản quyền sở hữu trí tuệ
                     </h1>
-
-                    {/* Nội dung mô tả */}
-                    <p className="text-white mb-4 text-lg text-center">
-                        Chi phí trọn gói A-Z và 3 ngày làm việc
-                    </p>
 
                     {/* <p className="text-white mb-6 text-center">
                         Dịch vụ thành lập doanh nghiệp - Chọn Thành lập doanh nghiệp, vững bước khởi nghiệp thành công!

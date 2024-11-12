@@ -125,13 +125,6 @@ export default function Anninhtrattu() {
 
                 </div>
 
-
-                {/* ////////// */}
-
-                {/* /////////////// */}
-
-
-                <Section11 />
             </section>
 
 

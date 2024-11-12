@@ -2,12 +2,12 @@
 import React from 'react';
 import Image from 'next/image';
 import Section11 from '@/app/components/section11';
-import Banner2 from '@/app/components/banner2';
+import Banner8 from '@/app/components/banner8';
 
 export default function Giayphepmoitruong() {
     return (
         <section className="py-16 bg-white md:mt-1">
-            <Banner2 />
+            <Banner8 />
             <section className="py-8 bg-white mt-8 md:mt-1">
                 <div className="relative max-w-7xl mx-auto isolate overflow-hidden bg-white py-6 sm:py-6 lg:overflow-visible lg:px-0">
                     <div className="absolute inset-0 -z-10 overflow-hidden">
@@ -132,13 +132,6 @@ export default function Giayphepmoitruong() {
 
                 </div>
 
-
-                {/* ////////// */}
-
-                {/* /////////////// */}
-
-
-                <Section11 />
             </section>
 
 

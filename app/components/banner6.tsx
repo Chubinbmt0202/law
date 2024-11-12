@@ -2,9 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 
 // app/components/Banner.js
-const Banner2 = () => {
+const Banner5 = () => {
     return (
-        <div className="relative h-[600px] sm:h-[500px] flex items-center justify-center">
+        <div className="relative h-[600px] sm:h-[500px] flex items-center justify-center mt-20">
             {/* Hình ảnh nền */}
             <div className="absolute inset-0 z-0">
                 <Image
@@ -22,7 +22,7 @@ const Banner2 = () => {
 
                     {/* Giá */}
                     <h1 className="text-yellow-200 text-3xl md:text-6xl font-bold mb-6 md:text-left">
-                        Giấy chứng nhận an ninh, trật tự
+                        Giấy phép kinh doanh & giấy chứng nhận đăng ký doanh nghiệp
                     </h1>
 
                     {/* <p className="text-white mb-6 text-center">
@@ -41,4 +41,4 @@ const Banner2 = () => {
     );
 };
 
-export default Banner2;
+export default Banner5;
